@@ -1,27 +1,71 @@
 ﻿using System;
-//using HtmlAgilityPack;
+using System.Text;
+using System.Net;
+using HtmlAgilityPack;
+using System.IO;
 
 public class PageHtml
 {
-    private string sURL;
+    private readonly string URL;
 
 	public PageHtml(string url)
 	{
-        if (url.Substring(0, 7) != "http://" ||  url.Substring(0, 8) != "https://")
-            url = "http://" + url;
-        sURL = url;
+        if (url.Substring(0, 7) != "http://"  &&  url.Substring(0, 8) != "https://")
+            URL = "http://" + url;
+        else
+            URL = url;
+        using (StreamWriter log = File.AppendText("JTTT.log"))
+        {
+            log.WriteLine(DateTime.Now.ToString() + "Stworzenie PAgeHtml z  url: " + URL);
+            log.Close();
+        }
     }
 
     public string GetStringPage()
     {
-        var wc = new WebClient();
- 
-            // Ustawiamy prawidłowe kodowanie dla tej strony
-            wc.Encoding = Encoding.UTF8;
-            // Dekodujemy HTML do czytelnych dla wszystkich znaków 
-            var html = System.Net.WebUtility.HtmlDecode(wc.DownloadString(_url));
+        var client = new WebClient();
+        client.Encoding = Encoding.UTF8;
+        //return client.DownloadString(URL)
+        return WebUtility.HtmlDecode(client.DownloadString(URL));
+    }
 
-            return html;
+    public string SearchSentence(string KeyWord) //return URL_source of image
+    {
+        var doc = new HtmlDocument();
+        doc.LoadHtml(GetStringPage());
+
+        using (StreamWriter log = File.AppendText("JTTT.log"))
+        {
+            log.WriteLine(DateTime.Now.ToString() + "SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString ");
+            log.Close();
+        }
+
+        var nodes = doc.DocumentNode.Descendants("img");
+        foreach (var node in nodes)
+        {
+            if (node.GetAttributeValue("alt", "").ToLower().Contains(KeyWord.ToLower()))
+                return node.GetAttributeValue("src", "");
+        }
+
+        using (StreamWriter log = File.AppendText("JTTT.log"))
+        {
+            log.WriteLine(DateTime.Now.ToString() + "SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String");
+            log.Close();
+        }
+
+        return "";
+    }
+
+    public void SaveImage(string ImageURL,string name)
+    {
+        var client = new WebClient();
+        client.DownloadFile(ImageURL, name);
+
+        using (StreamWriter log = File.AppendText("JTTT.log"))
+        {
+            log.WriteLine(DateTime.Now.ToString() + "SaveImage(): zapisalem obraz o URL: " + ImageURL + " Pod nazwą: " + name);
+            log.Close();
         }
     }
+
 }
