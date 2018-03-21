@@ -52,7 +52,7 @@ namespace JTTT
                 var URL_image = HTML.SearchSentence(Textbox_Text.Text);
                 if (URL_image == "")
                 {
-                    ConsoleTextbox.Text += "Nie znaleziono obrazka! \n";
+                    ConsoleTextbox.Text += "Nie znaleziono obrazka! Prawdopodobnie zła nazwa obrazka! \n";
                     return;
                 }
                 HTML.SaveImage(URL_image, "tmp.png");
@@ -60,10 +60,10 @@ namespace JTTT
                 ConsoleTextbox.Text += "Barwo! Wysłałeś Obrazek o URL: "+URL_image+"\n";
             }
             catch(Exception x){
-                ConsoleTextbox.Text += ("Expension: " + x + "\n");
+                ConsoleTextbox.Text += ("Błąd: " + x.Message.ToString() + "\n");
                 using (StreamWriter log = File.AppendText("JTTT.log"))
                 {
-                    log.WriteLine(DateTime.Now.ToString() + " Złapano wyjątek o  treści: " + x);
+                    log.WriteLine(DateTime.Now.ToString() + "Błąd: " + x + "\n");
                     log.Close();
                 }
             }

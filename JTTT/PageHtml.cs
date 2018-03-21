@@ -9,8 +9,8 @@ public class PageHtml
     private readonly string URL;
 
 	public PageHtml(string url)
-	{
-        if (url.Substring(0, 7) != "http://"  &&  url.Substring(0, 8) != "https://")
+	{ 
+        if (url.Length < 9 || (url.Substring(0, 7) != "http://"  &&  url.Substring(0, 8) != "https://"))
             URL = "http://" + url;
         else
             URL = url;
@@ -23,48 +23,84 @@ public class PageHtml
 
     public string GetStringPage()
     {
-        var client = new WebClient();
-        client.Encoding = Encoding.UTF8;
-        //return client.DownloadString(URL)
-        return WebUtility.HtmlDecode(client.DownloadString(URL));
+        try
+        {
+            var client = new WebClient();
+            client.Encoding = Encoding.UTF8;
+            //return client.DownloadString(URL)
+            return WebUtility.HtmlDecode(client.DownloadString(URL));
+        }
+        catch (Exception ex)
+        {
+            using (StreamWriter log = File.AppendText("JTTT.log"))
+            {
+                log.WriteLine(DateTime.Now.ToString() + " GetStringPage(): Expection:  " + ex);
+                log.Close();
+            }
+            throw new Exception("Nie udało się pobrac zawartosci strony!");
+        }
     }
 
     public string SearchSentence(string KeyWord) //return URL_source of image
     {
-        var doc = new HtmlDocument();
-        doc.LoadHtml(GetStringPage());
-
-        using (StreamWriter log = File.AppendText("JTTT.log"))
+        try
         {
-            log.WriteLine(DateTime.Now.ToString() + "SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString ");
-            log.Close();
-        }
+            var doc = new HtmlDocument();
+            doc.LoadHtml(GetStringPage());
 
-        var nodes = doc.DocumentNode.Descendants("img");
-        foreach (var node in nodes)
+            using (StreamWriter log = File.AppendText("JTTT.log"))
+            {
+                log.WriteLine(DateTime.Now.ToString() + "SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString ");
+                log.Close();
+            }
+
+            var nodes = doc.DocumentNode.Descendants("img");
+            foreach (var node in nodes)
+            {
+                if (node.GetAttributeValue("alt", "").ToLower().Contains(KeyWord.ToLower()))
+                    return node.GetAttributeValue("src", "");
+            }
+
+            using (StreamWriter log = File.AppendText("JTTT.log"))
+            {
+                log.WriteLine(DateTime.Now.ToString() + "SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String");
+                log.Close();
+            }
+
+            return "";
+        }
+        catch (Exception ex)
         {
-            if (node.GetAttributeValue("alt", "").ToLower().Contains(KeyWord.ToLower()))
-                return node.GetAttributeValue("src", "");
+            using (StreamWriter log = File.AppendText("JTTT.log"))
+            {
+                log.WriteLine(DateTime.Now.ToString() + " SearchSentence(): Expection:  " + ex);
+                log.Close();
+            }
+            throw new Exception("Nie udało się wyszukać obrazka! Prawdopodobnie zły URL.");
         }
-
-        using (StreamWriter log = File.AppendText("JTTT.log"))
-        {
-            log.WriteLine(DateTime.Now.ToString() + "SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String");
-            log.Close();
-        }
-
-        return "";
     }
 
     public void SaveImage(string ImageURL,string name)
     {
-        var client = new WebClient();
-        client.DownloadFile(ImageURL, name);
-
-        using (StreamWriter log = File.AppendText("JTTT.log"))
+        try
         {
-            log.WriteLine(DateTime.Now.ToString() + "SaveImage(): zapisalem obraz o URL: " + ImageURL + " Pod nazwą: " + name);
-            log.Close();
+            var client = new WebClient();
+            client.DownloadFile(ImageURL, name);
+
+            using (StreamWriter log = File.AppendText("JTTT.log"))
+            {
+                log.WriteLine(DateTime.Now.ToString() + "SaveImage(): zapisalem obraz o URL: " + ImageURL + " Pod nazwą: " + name);
+                log.Close();
+            }
+        }
+        catch (Exception ex)
+        {
+            using (StreamWriter log = File.AppendText("JTTT.log"))
+            {
+                log.WriteLine(DateTime.Now.ToString() + " SaveImage(): Expection:  " + ex);
+                log.Close();
+            }
+            throw new Exception("Nie udało się zapisać obrazka!");
         }
     }
 

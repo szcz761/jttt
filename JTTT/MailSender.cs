@@ -24,36 +24,47 @@ public class MailSender
     }
     public void SendEmail(string keyword, string imageURL,string nameOfImage)
     {
-
-        var message = new MailMessage();
-        message.From = new MailAddress(MyMail);
-        message.To.Add(new MailAddress(TargetEmail));
-
-        message.Subject = "JTTT wyszukało słowo: " + keyword;
-    
-        message.Body = "Witam, zgodnie z polecieniem wyszukałem obrazki na temat: "+ keyword +"\n Oto link do obrazka: " + imageURL + "\n Znajduje się on również w załączniku.";
-
-        var mail = new SmtpClient(MailHost);
-        mail.Port = 587;
-        mail.Credentials = new NetworkCredential(MyMail, MyMailPassword);
-        mail.EnableSsl = true;
-
-        using (StreamWriter log = File.AppendText("JTTT.log"))
+        try
         {
-            log.WriteLine(DateTime.Now.ToString() + "SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: " + keyword + " imageURL: " + imageURL + "nameOfImage: " + nameOfImage);
-            log.Close();
+            var message = new MailMessage();
+            message.From = new MailAddress(MyMail);
+            message.To.Add(new MailAddress(TargetEmail));
+
+            message.Subject = "JTTT wyszukało słowo: " + keyword;
+
+            message.Body = "Witam, zgodnie z polecieniem wyszukałem obrazki na temat: " + keyword + "\n Oto link do obrazka: " + imageURL + "\n Znajduje się on również w załączniku.";
+
+            var mail = new SmtpClient(MailHost);
+            mail.Port = 587;
+            mail.Credentials = new NetworkCredential(MyMail, MyMailPassword);
+            mail.EnableSsl = true;
+
+            using (StreamWriter log = File.AppendText("JTTT.log"))
+            {
+                log.WriteLine(DateTime.Now.ToString() + "SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: " + keyword + " imageURL: " + imageURL + "nameOfImage: " + nameOfImage);
+                log.Close();
+            }
+
+            Attachment att = new Attachment(nameOfImage, MediaTypeNames.Application.Octet);
+            message.Attachments.Add(att);
+            mail.Send(message);
+
+            message.Dispose();
+            mail.Dispose();
+            using (StreamWriter log = File.AppendText("JTTT.log"))
+            {
+                log.WriteLine(DateTime.Now.ToString() + "SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: " + keyword + " imageURL: " + imageURL + "nameOfImage: " + nameOfImage);
+                log.Close();
+            }
         }
-
-        Attachment att = new Attachment(nameOfImage, MediaTypeNames.Application.Octet);
-        message.Attachments.Add(att);
-        mail.Send(message);
-
-        message.Dispose();
-        mail.Dispose();
-        using (StreamWriter log = File.AppendText("JTTT.log"))
-        {
-            log.WriteLine(DateTime.Now.ToString() + "SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: " + keyword + " imageURL: " + imageURL + "nameOfImage: " + nameOfImage);
-            log.Close();
+        catch (Exception ex){
+            
+            using (StreamWriter log = File.AppendText("JTTT.log"))
+            {
+                log.WriteLine(DateTime.Now.ToString() + "SendEmail(): Expection:  " + ex);
+                log.Close();
+            }
+            throw new Exception("Nie udało się wysłać! Prawdopodobnie zły mail!");
         }
     }
 }

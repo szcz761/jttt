@@ -75,3 +75,593 @@
 19.03.2018 19:28:40SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
 19.03.2018 19:28:40SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: jedi imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/Fyvmr6LECRnzQjkj.jpgnameOfImage: tmp.png
 19.03.2018 19:28:42SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: jedi imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/Fyvmr6LECRnzQjkj.jpgnameOfImage: tmp.png
+21.03.2018 15:34:13====================== Uruchomienie programu ======================
+21.03.2018 15:35:23 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:35:23Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 15:35:23Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:35:23SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:35:23SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:35:25 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:35:25Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 15:35:25Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:35:26SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:35:26SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:35:47 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: asfsad keyword: dokładnie
+21.03.2018 15:35:47Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 15:35:47Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: asfsadOraz Defultowym hasłem
+21.03.2018 15:35:47SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:35:47SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:36:01 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: asfsad keyword: pranie
+21.03.2018 15:36:01Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 15:36:01Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: asfsadOraz Defultowym hasłem
+21.03.2018 15:36:01SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:36:01SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ctXOry9bG17d62nW.jpg Pod nazwą: tmp.png
+21.03.2018 15:36:01SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:36:01SendEmail(): Expection:  System.FormatException: Podany ciąg nie ma formy wymaganej dla adresu e-mail.
+   w System.Net.Mail.MailAddressParser.ReadCfwsAndThrowIfIncomplete(String data, Int32 index)
+   w System.Net.Mail.MailAddressParser.ParseDomain(String data, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data, Boolean expectMultipleAddresses, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data)
+   w System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   w System.Net.Mail.MailAddress..ctor(String address)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 31
+21.03.2018 15:36:01Błąd: System.Exception: Nie udało się wysłać!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 67
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 59
+
+21.03.2018 15:36:40 Nacisniecie przyciksu wykonaj. Z parametrami: url: e5tyeryer mail: asfsad keyword: pranie
+21.03.2018 15:36:40Stworzenie PAgeHtml z  url: http://e5tyeryer
+21.03.2018 15:36:40Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: asfsadOraz Defultowym hasłem
+21.03.2018 15:36:42 GetStringPage(): Expection:  System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'e5tyeryer'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 31
+21.03.2018 15:36:42 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 40
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 49
+21.03.2018 15:36:42Błąd: System.Exception: Nie udało się wyszukać obrazka!
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 79
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 52
+
+21.03.2018 15:44:42====================== Uruchomienie programu ======================
+21.03.2018 15:44:45 Nacisniecie przyciksu wykonaj. Z parametrami: url: sdvsdcvsd mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:44:45Stworzenie PAgeHtml z  url: http://sdvsdcvsd
+21.03.2018 15:44:45Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:44:48 GetStringPage(): Expection:  System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'sdvsdcvsd'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 31
+21.03.2018 15:44:48 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 40
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 49
+21.03.2018 15:44:48Błąd: System.Exception: Nie udało się wyszukać obrazka!
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 79
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 52
+
+21.03.2018 15:45:57====================== Uruchomienie programu ======================
+21.03.2018 15:46:00 Nacisniecie przyciksu wykonaj. Z parametrami: url: sdfsdfl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:46:00Stworzenie PAgeHtml z  url: http://sdfsdfl/
+21.03.2018 15:46:00Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:46:02 GetStringPage(): Expection:  System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'sdfsdfl'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 31
+21.03.2018 15:46:02 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 40
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 49
+21.03.2018 15:46:02Błąd: System.Exception: Nie udało się wyszukać obrazka!
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 79
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 52
+
+21.03.2018 15:46:31 Nacisniecie przyciksu wykonaj. Z parametrami: url: sdfsdfsdfsdvsddvd mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:46:31Stworzenie PAgeHtml z  url: http://sdfsdfsdfsdvsddvd
+21.03.2018 15:46:31Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:46:32 GetStringPage(): Expection:  System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'sdfsdfsdfsdvsddvd'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 31
+21.03.2018 15:46:32 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 40
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 49
+21.03.2018 15:46:32Błąd: System.Exception: Nie udało się wyszukać obrazka!
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 79
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 52
+
+21.03.2018 15:46:38 Nacisniecie przyciksu wykonaj. Z parametrami: url: sdfsdfsdfsdvsddvd mail: zxvzxc keyword: dokładnie
+21.03.2018 15:46:38Stworzenie PAgeHtml z  url: http://sdfsdfsdfsdvsddvd
+21.03.2018 15:46:38Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: zxvzxcOraz Defultowym hasłem
+21.03.2018 15:46:39 GetStringPage(): Expection:  System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'sdfsdfsdfsdvsddvd'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 31
+21.03.2018 15:46:39 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 40
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 49
+21.03.2018 15:46:39Błąd: System.Exception: Nie udało się wyszukać obrazka!
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 79
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 52
+
+21.03.2018 15:46:43====================== Uruchomienie programu ======================
+21.03.2018 15:46:55 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: asfsadasd keyword: pranie
+21.03.2018 15:46:55Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 15:46:55Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: asfsadasdOraz Defultowym hasłem
+21.03.2018 15:46:56SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:46:56SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ctXOry9bG17d62nW.jpg Pod nazwą: tmp.png
+21.03.2018 15:46:56SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:46:56SendEmail(): Expection:  System.FormatException: Podany ciąg nie ma formy wymaganej dla adresu e-mail.
+   w System.Net.Mail.MailAddressParser.ReadCfwsAndThrowIfIncomplete(String data, Int32 index)
+   w System.Net.Mail.MailAddressParser.ParseDomain(String data, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data, Boolean expectMultipleAddresses, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data)
+   w System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   w System.Net.Mail.MailAddress..ctor(String address)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 31
+21.03.2018 15:46:56Błąd: System.Exception: Nie udało się wysłać!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 67
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 59
+
+21.03.2018 15:47:03 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: asfsadasd keyword: pranie
+21.03.2018 15:47:03Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 15:47:03Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: asfsadasdOraz Defultowym hasłem
+21.03.2018 15:47:04SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:47:04SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ctXOry9bG17d62nW.jpg Pod nazwą: tmp.png
+21.03.2018 15:47:04SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:47:04SendEmail(): Expection:  System.FormatException: Podany ciąg nie ma formy wymaganej dla adresu e-mail.
+   w System.Net.Mail.MailAddressParser.ReadCfwsAndThrowIfIncomplete(String data, Int32 index)
+   w System.Net.Mail.MailAddressParser.ParseDomain(String data, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data, Boolean expectMultipleAddresses, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data)
+   w System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   w System.Net.Mail.MailAddress..ctor(String address)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 31
+21.03.2018 15:47:04Błąd: System.Exception: Nie udało się wysłać!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 67
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 59
+
+21.03.2018 15:47:10 Nacisniecie przyciksu wykonaj. Z parametrami: url: sfsdfsdcsdcsdcc mail: asfsadasd keyword: pranie
+21.03.2018 15:47:10Stworzenie PAgeHtml z  url: http://sfsdfsdcsdcsdcc
+21.03.2018 15:47:10Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: asfsadasdOraz Defultowym hasłem
+21.03.2018 15:47:13 GetStringPage(): Expection:  System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'sfsdfsdcsdcsdcc'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 31
+21.03.2018 15:47:13 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 40
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 49
+21.03.2018 15:47:13Błąd: System.Exception: Nie udało się wyszukać obrazka!
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 79
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 52
+
+21.03.2018 15:50:33====================== Uruchomienie programu ======================
+21.03.2018 15:50:36 Nacisniecie przyciksu wykonaj. Z parametrami: url: wefsdf mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:50:36Błąd: System.ArgumentOutOfRangeException: Indeks i długość muszą odwoływać się do lokalizacji w ciągu.
+Nazwa parametru: length
+   w System.String.Substring(Int32 startIndex, Int32 length)
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 13
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:50:53 Nacisniecie przyciksu wykonaj. Z parametrami: url: wefsdf mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:50:53Błąd: System.ArgumentOutOfRangeException: Indeks i długość muszą odwoływać się do lokalizacji w ciągu.
+Nazwa parametru: length
+   w System.String.Substring(Int32 startIndex, Int32 length)
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 13
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:50:56 Nacisniecie przyciksu wykonaj. Z parametrami: url: wefsdf54 mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:50:56Stworzenie PAgeHtml z  url: http://wefsdf54
+21.03.2018 15:50:56Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:50:59 GetStringPage(): Expection:  System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'wefsdf54'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 31
+21.03.2018 15:50:59 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 40
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 49
+21.03.2018 15:50:59Błąd: System.Exception: Nie udało się wyszukać obrazka! Prawdopodobnie zły URL.
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 79
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 52
+
+21.03.2018 15:51:09 Nacisniecie przyciksu wykonaj. Z parametrami: url: ca mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:51:09Błąd: System.ArgumentOutOfRangeException: Indeks i długość muszą odwoływać się do lokalizacji w ciągu.
+Nazwa parametru: length
+   w System.String.Substring(Int32 startIndex, Int32 length)
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 13
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:51:19 Nacisniecie przyciksu wykonaj. Z parametrami: url:  mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:51:20Błąd: System.ArgumentOutOfRangeException: Indeks i długość muszą odwoływać się do lokalizacji w ciągu.
+Nazwa parametru: length
+   w System.String.Substring(Int32 startIndex, Int32 length)
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 13
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:06====================== Uruchomienie programu ======================
+21.03.2018 15:54:09 Nacisniecie przyciksu wykonaj. Z parametrami: url: sdffds mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:09Błąd: System.Exception: Adres URL za krótki!
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 14
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:11 Nacisniecie przyciksu wykonaj. Z parametrami: url: sdffds mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:11Błąd: System.Exception: Adres URL za krótki!
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 14
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:16 Nacisniecie przyciksu wykonaj. Z parametrami: url: sdffdsgsdfsd mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:16Stworzenie PAgeHtml z  url: http://sdffdsgsdfsd
+21.03.2018 15:54:16Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:18 GetStringPage(): Expection:  System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'sdffdsgsdfsd'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 33
+21.03.2018 15:54:18 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 42
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 51
+21.03.2018 15:54:18Błąd: System.Exception: Nie udało się wyszukać obrazka! Prawdopodobnie zły URL.
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 81
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 52
+
+21.03.2018 15:54:45 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:45Błąd: System.Exception: Adres URL za krótki!
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 14
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:49 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:49Błąd: System.Exception: Adres URL za krótki!
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 14
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:50 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:50Błąd: System.Exception: Adres URL za krótki!
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 14
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:50 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:50Błąd: System.Exception: Adres URL za krótki!
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 14
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:50 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:50Błąd: System.Exception: Adres URL za krótki!
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 14
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:50 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:50Błąd: System.Exception: Adres URL za krótki!
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 14
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:50 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:51Błąd: System.Exception: Adres URL za krótki!
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 14
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:51 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:51Błąd: System.Exception: Adres URL za krótki!
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 14
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:51 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:51Błąd: System.Exception: Adres URL za krótki!
+   w PageHtml..ctor(String url) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 14
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 50
+
+21.03.2018 15:54:55 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:55Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:55Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:56SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:56SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:56 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:56Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:56Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:56SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:56SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:56 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:56Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:56Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:56SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:56SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:56 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:56Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:56Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:56SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:56SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:56 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:56Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:56Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:56SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:56SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:56 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:56Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:56Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:56SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:56SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:56 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:56Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:56Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:57SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:57SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:57 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:57Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:57Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:57SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:57SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:57 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:57Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:57Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:57SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:57SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:57 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:57Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:57Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:57SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:57SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:58 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:58Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:58Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:58SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:58SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:58 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:58Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:58Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:58SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:58SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:59 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:59Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:59Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:59SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:59SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:59 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:59Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:59Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:54:59SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:54:59SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:54:59 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:54:59Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:54:59Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:00SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:00SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:00 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:00Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:00Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:00SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:00SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:00 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:01Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:01Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:01SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:01SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:01 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:01Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:01Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:01SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:01SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:01 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:01Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:01Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:01SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:01SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:02 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:02Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:02Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:02SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:02SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:02 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:02Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:02Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:02SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:02SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:02 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:02Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:02Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:02SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:02SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:03 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:03Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:03Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:03SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:03SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:03 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:03Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:03Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:03SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:03SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:03 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:03Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:03Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:03SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:03SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:03 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:03Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:03Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:04SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:04SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:04 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:04Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:04Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:04SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:04SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:04 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:04Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:04Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:04SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:04SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:04 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:04Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:04Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:04SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:05SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:05 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:05Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:05Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:05SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:05SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:05 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:05Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:05Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:05SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:05SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:05 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:05Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:05Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:06SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:06SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:06 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:06Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:06Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:06SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:06SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:07 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:07Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:07Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:07SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:07SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:07 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:07Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:07Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:07SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:07SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:08 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:08Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:08Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:08SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:08SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:08 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:08Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:08Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:09SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:09SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:09 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:09Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:09Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:09SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:09SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:09 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:09Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:09Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:09SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:09SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:09 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:09Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:09Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:09SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:09SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:10 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:10Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:10Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:10SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:10SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:10 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:10Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:10Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:10SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:10SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:10 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:10Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:10Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:10SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:10SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:10 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:10Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:10Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:10SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:10SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:11 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:11Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:11Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:11SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:11SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:55:11 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/ mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:55:11Stworzenie PAgeHtml z  url: http://kwejk.pl/
+21.03.2018 15:55:11Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:55:11SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:55:11SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:57:59====================== Uruchomienie programu ======================
+21.03.2018 15:58:13 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl mail: szcz761@gmail.com keyword: dokładnie
+21.03.2018 15:58:13Stworzenie PAgeHtml z  url: http://kwejk.pl
+21.03.2018 15:58:13Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:58:13SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:58:13SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 15:58:28 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl mail: szcz761@gmail.com keyword: pranie
+21.03.2018 15:58:28Stworzenie PAgeHtml z  url: http://kwejk.pl
+21.03.2018 15:58:28Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:58:29SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:58:29SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ctXOry9bG17d62nW.jpg Pod nazwą: tmp.png
+21.03.2018 15:58:29SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 15:58:29SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: pranie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/ctXOry9bG17d62nW.jpgnameOfImage: tmp.png
+21.03.2018 15:58:31SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: pranie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/ctXOry9bG17d62nW.jpgnameOfImage: tmp.png
+21.03.2018 15:58:53 Nacisniecie przyciksu wykonaj. Z parametrami: url: we mail: szcz761@gmail.com keyword: pranie
+21.03.2018 15:58:53Stworzenie PAgeHtml z  url: http://we
+21.03.2018 15:58:53Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:58:56 GetStringPage(): Expection:  System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'we'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 32
+21.03.2018 15:58:56 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 41
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 50
+21.03.2018 15:58:56Błąd: System.Exception: Nie udało się wyszukać obrazka! Prawdopodobnie zły URL.
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 80
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 52
+
+21.03.2018 15:59:02 Nacisniecie przyciksu wykonaj. Z parametrami: url:  mail: szcz761@gmail.com keyword: pranie
+21.03.2018 15:59:02Stworzenie PAgeHtml z  url: http://
+21.03.2018 15:59:02Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 15:59:03 GetStringPage(): Expection:  System.ArgumentException: Formaty identyfikatorów URI nie są obsługiwane.
+   w System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   w System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   w System.IO.Path.GetFullPathInternal(String path)
+   w System.Net.WebClient.GetUri(String path)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 32
+21.03.2018 15:59:03 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 41
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 50
+21.03.2018 15:59:03Błąd: System.Exception: Nie udało się wyszukać obrazka! Prawdopodobnie zły URL.
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 80
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 52
+
+21.03.2018 16:00:42 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/kategoria/humor mail: szcz761@gmail.com keyword: pranie
+21.03.2018 16:00:42Stworzenie PAgeHtml z  url: http://kwejk.pl/kategoria/humor
+21.03.2018 16:00:42Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 16:00:42SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 16:00:42SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 16:00:53 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/kategoria/humor mail: szcz761@gmail.com keyword: naprawde
+21.03.2018 16:00:53Stworzenie PAgeHtml z  url: http://kwejk.pl/kategoria/humor
+21.03.2018 16:00:53Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 16:00:54SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 16:00:54SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 16:01:03 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/kategoria/humor mail: szcz761@gmail.com keyword: naprawdę
+21.03.2018 16:01:03Stworzenie PAgeHtml z  url: http://kwejk.pl/kategoria/humor
+21.03.2018 16:01:03Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 16:01:04SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 16:01:04SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/r8douagWqBnobxNd.jpg Pod nazwą: tmp.png
+21.03.2018 16:01:04SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 16:01:04SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: naprawdę imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/r8douagWqBnobxNd.jpgnameOfImage: tmp.png
+21.03.2018 16:01:06SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: naprawdę imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/r8douagWqBnobxNd.jpgnameOfImage: tmp.png
+21.03.2018 16:01:10 Nacisniecie przyciksu wykonaj. Z parametrami: url: kwejk.pl/kategoria/humor mail: goh keyword: naprawdę
+21.03.2018 16:01:10Stworzenie PAgeHtml z  url: http://kwejk.pl/kategoria/humor
+21.03.2018 16:01:10Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: gohOraz Defultowym hasłem
+21.03.2018 16:01:10SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 16:01:11SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/r8douagWqBnobxNd.jpg Pod nazwą: tmp.png
+21.03.2018 16:01:11SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 16:01:11SendEmail(): Expection:  System.FormatException: Podany ciąg nie ma formy wymaganej dla adresu e-mail.
+   w System.Net.Mail.MailAddressParser.ReadCfwsAndThrowIfIncomplete(String data, Int32 index)
+   w System.Net.Mail.MailAddressParser.ParseDomain(String data, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data, Boolean expectMultipleAddresses, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data)
+   w System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   w System.Net.Mail.MailAddress..ctor(String address)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 31
+21.03.2018 16:01:11Błąd: System.Exception: Nie udało się wysłać! Prawdopodobnie zły mail!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 67
+   w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 59
+
