@@ -702,3 +702,148 @@ Nazwa parametru: length
    w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 79
    w JTTT.Task.process() w H:\Programy\Visual Studio\JTTT\JTTT\Task.cs:wiersz 31
 
+21.03.2018 19:44:08====================== Uruchomienie programu ======================
+21.03.2018 19:46:05 ====================== Uruchomienie programu ======================
+21.03.2018 19:57:03 ====================== Uruchomienie programu ======================
+21.03.2018 19:57:06 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: dokładnie
+21.03.2018 19:57:06Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 19:57:06Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 19:57:06SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 19:57:06SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 19:57:06 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: dokładnie
+21.03.2018 19:57:06Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 19:57:06Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 19:57:06SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 19:57:07SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 20:02:05 ====================== Uruchomienie programu ======================
+21.03.2018 20:02:36 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: pewne
+21.03.2018 20:02:36Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 20:02:36Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 20:02:37SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:02:37SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpg Pod nazwą: tmp.png
+21.03.2018 20:02:37SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:02:37SendEmail(): Expection:  System.FormatException: Podany ciąg nie ma formy wymaganej dla adresu e-mail.
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data, Boolean expectMultipleAddresses, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data)
+   w System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   w System.Net.Mail.MailAddress..ctor(String address)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 31
+21.03.2018 20:02:37Błąd: System.Exception: Nie udało się wysłać! Prawdopodobnie zły mail!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 67
+   w JTTT.Task.process() w H:\Programy\Visual Studio\JTTT\JTTT\Task.cs:wiersz 35
+
+21.03.2018 20:08:47 ====================== Uruchomienie programu ======================
+21.03.2018 20:09:00 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: dokładnie
+21.03.2018 20:09:00Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 20:09:00Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 20:09:00SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:09:00SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 20:09:01 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: dokładnie
+21.03.2018 20:09:01Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 20:09:01Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 20:09:01SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:09:01SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 20:09:19 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: nie
+21.03.2018 20:09:19Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 20:09:19Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 20:09:19SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:09:20SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpg Pod nazwą: tmp.png
+21.03.2018 20:09:20SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:09:20SendEmail(): Expection:  System.FormatException: Podany ciąg nie ma formy wymaganej dla adresu e-mail.
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data, Boolean expectMultipleAddresses, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data)
+   w System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   w System.Net.Mail.MailAddress..ctor(String address)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 31
+21.03.2018 20:09:20Błąd: System.Exception: Nie udało się wysłać! Prawdopodobnie zły mail!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 67
+   w JTTT.Task.process() w H:\Programy\Visual Studio\JTTT\JTTT\Task.cs:wiersz 35
+
+21.03.2018 20:09:20 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: nie
+21.03.2018 20:09:20Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 20:09:20Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 20:09:20SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:09:21SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpg Pod nazwą: tmp.png
+21.03.2018 20:09:21SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:09:21SendEmail(): Expection:  System.FormatException: Podany ciąg nie ma formy wymaganej dla adresu e-mail.
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data, Boolean expectMultipleAddresses, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data)
+   w System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   w System.Net.Mail.MailAddress..ctor(String address)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 31
+21.03.2018 20:09:21Błąd: System.Exception: Nie udało się wysłać! Prawdopodobnie zły mail!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 67
+   w JTTT.Task.process() w H:\Programy\Visual Studio\JTTT\JTTT\Task.cs:wiersz 35
+
+21.03.2018 20:09:21 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: nie
+21.03.2018 20:09:21Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 20:09:21Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 20:09:21SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:09:21SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpg Pod nazwą: tmp.png
+21.03.2018 20:09:21SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:09:21SendEmail(): Expection:  System.FormatException: Podany ciąg nie ma formy wymaganej dla adresu e-mail.
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data, Boolean expectMultipleAddresses, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data)
+   w System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   w System.Net.Mail.MailAddress..ctor(String address)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 31
+21.03.2018 20:09:21Błąd: System.Exception: Nie udało się wysłać! Prawdopodobnie zły mail!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 67
+   w JTTT.Task.process() w H:\Programy\Visual Studio\JTTT\JTTT\Task.cs:wiersz 35
+
+21.03.2018 20:09:21 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: nie
+21.03.2018 20:09:21Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 20:09:21Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 20:09:22SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:09:22SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpg Pod nazwą: tmp.png
+21.03.2018 20:09:22SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:09:22SendEmail(): Expection:  System.FormatException: Podany ciąg nie ma formy wymaganej dla adresu e-mail.
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data, Boolean expectMultipleAddresses, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data)
+   w System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   w System.Net.Mail.MailAddress..ctor(String address)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 31
+21.03.2018 20:09:22Błąd: System.Exception: Nie udało się wysłać! Prawdopodobnie zły mail!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 67
+   w JTTT.Task.process() w H:\Programy\Visual Studio\JTTT\JTTT\Task.cs:wiersz 35
+
+21.03.2018 20:15:19 ====================== Uruchomienie programu ======================
+21.03.2018 20:15:22 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: dokładnie
+21.03.2018 20:15:22Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 20:15:22Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 20:15:23SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:15:23SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 20:15:29 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: nie
+21.03.2018 20:15:29Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 20:15:29Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 20:15:30SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:15:30SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpg Pod nazwą: tmp.png
+21.03.2018 20:15:30SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:17:17SendEmail(): Expection:  System.FormatException: Podany ciąg nie ma formy wymaganej dla adresu e-mail.
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data, Boolean expectMultipleAddresses, Int32& index)
+   w System.Net.Mail.MailAddressParser.ParseAddress(String data)
+   w System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   w System.Net.Mail.MailAddress..ctor(String address)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage)
+21.03.2018 20:17:17Błąd: System.Exception: Nie udało się wysłać! Prawdopodobnie zły mail!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage)
+   w JTTT.Task.process()
+
+21.03.2018 20:17:20 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+21.03.2018 20:17:20Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 20:17:20Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 20:17:20SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:17:21SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpg Pod nazwą: tmp.png
+21.03.2018 20:17:21SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:17:31SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpgnameOfImage: tmp.png
+21.03.2018 20:17:35SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpgnameOfImage: tmp.png
+21.03.2018 20:17:42 ====================== Uruchomienie programu ======================
+21.03.2018 20:17:47 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+21.03.2018 20:17:47Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 20:17:47Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+21.03.2018 20:17:48SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:17:48SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpg Pod nazwą: tmp.png
+21.03.2018 20:17:49SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 20:17:49SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpgnameOfImage: tmp.png
+21.03.2018 20:17:51SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpgnameOfImage: tmp.png
+21.03.2018 20:30:34 ====================== Uruchomienie programu ======================
