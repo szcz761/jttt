@@ -665,3 +665,40 @@ Nazwa parametru: length
    w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\JTTT\MailSender.cs:wiersz 67
    w JTTT.MainWindow.Button_Wykonaj_Click(Object sender, RoutedEventArgs e) w H:\Programy\Visual Studio\JTTT\JTTT\MainWindow.xaml.cs:wiersz 59
 
+21.03.2018 19:35:45====================== Uruchomienie programu ======================
+21.03.2018 19:37:32====================== Uruchomienie programu ======================
+21.03.2018 19:37:33 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: https://kwejk.pl/ keyword: dokładnie
+21.03.2018 19:37:33Stworzenie PAgeHtml z  url: https://kwejk.pl/
+21.03.2018 19:37:33Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: https://kwejk.pl/Oraz Defultowym hasłem
+21.03.2018 19:37:34SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+21.03.2018 19:37:34SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+21.03.2018 19:37:40 Nacisniecie przyciksu wykonaj. Z parametrami: url: rwrqwr mail: rwrqwr keyword: dokładnie
+21.03.2018 19:37:40Stworzenie PAgeHtml z  url: http://rwrqwr
+21.03.2018 19:37:40Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: rwrqwrOraz Defultowym hasłem
+21.03.2018 19:37:42 GetStringPage(): Expection:  System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'rwrqwr'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 31
+21.03.2018 19:37:42 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 40
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 49
+21.03.2018 19:37:42Błąd: System.Exception: Nie udało się wyszukać obrazka! Prawdopodobnie zły URL.
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 79
+   w JTTT.Task.process() w H:\Programy\Visual Studio\JTTT\JTTT\Task.cs:wiersz 31
+
+21.03.2018 19:37:48 Nacisniecie przyciksu wykonaj. Z parametrami: url: rwrqwr mail: rwrqwr keyword: dokładnie
+21.03.2018 19:37:48Stworzenie PAgeHtml z  url: http://rwrqwr
+21.03.2018 19:37:48Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: rwrqwrOraz Defultowym hasłem
+21.03.2018 19:37:50 GetStringPage(): Expection:  System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'rwrqwr'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 31
+21.03.2018 19:37:50 SearchSentence(): Expection:  System.Exception: Nie udało się pobrac zawartosci strony!
+   w PageHtml.GetStringPage() w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 40
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 49
+21.03.2018 19:37:50Błąd: System.Exception: Nie udało się wyszukać obrazka! Prawdopodobnie zły URL.
+   w PageHtml.SearchSentence(String KeyWord) w H:\Programy\Visual Studio\JTTT\JTTT\PageHtml.cs:wiersz 79
+   w JTTT.Task.process() w H:\Programy\Visual Studio\JTTT\JTTT\Task.cs:wiersz 31
+
