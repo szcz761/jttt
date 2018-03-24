@@ -6,24 +6,26 @@
         xmlns:local="clr-namespace:JTTT"
         mc:Ignorable="d"
         Title="MainWindow" Height="394.667" Width="712">
-    <Grid Margin="0,0,-189,0">
+    <Grid Margin="0,0,3.6,-0.2">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="373*"/>
-            <ColumnDefinition Width="333*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="8*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Button_Wykonaj" Content="Dodaj" HorizontalAlignment="Left" Margin="227,188,0,0" VerticalAlignment="Top" Width="75" Click="Button_Wykonaj_Click" RenderTransformOrigin="0.524,-1.033"/>
-        <Label x:Name="Label_URL" Content="URL:" HorizontalAlignment="Left" Margin="118,13,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Textbox_URL" HorizontalAlignment="Left" Height="23" Margin="214,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="https://kwejk.pl/" Grid.ColumnSpan="2"/>
-        <Label x:Name="Label_Text" Content="Tekst" HorizontalAlignment="Left" Margin="118,53,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Textbox_Text" HorizontalAlignment="Left" Height="23" Margin="214,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="dokładnie" Grid.ColumnSpan="2"/>
-        <Label x:Name="Label_Mail" Content="Mail:" HorizontalAlignment="Left" Margin="117,148,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Textbox_Mail" HorizontalAlignment="Left" Height="23" Margin="214,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="szcz761@gmail.com" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="ConsoleTextbox" HorizontalAlignment="Left" Height="136" Margin="0,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="517" ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="2"/>
-        <ListBox x:Name="ListOfTasks" HorizontalAlignment="Left" Height="265" Margin="63,31,0,0" VerticalAlignment="Top" Width="132" Grid.Column="1"/>
-        <Button x:Name="DoIt" Content="Wykonaj!" Grid.Column="1" Margin="64,303,282,41"/>
-        <Button x:Name="Clean"  Content="Czysc" Grid.Column="1" Margin="148,303,198,41"/>
-        <Button x:Name="Serialize" Content="Serialize" Grid.Column="1" Margin="78,326,268,18"/>
-        <Button x:Name="Deserialize" Content="Deserialize" Grid.Column="1" Margin="146,327,200,17"/>
+        <Button x:Name="Button_Add_Task" Content="Dodaj zadanie do listy" HorizontalAlignment="Left" Margin="107,127,0,0" VerticalAlignment="Top" Width="222" Click="Button_Wykonaj_Click" RenderTransformOrigin="0.524,-1.033" Height="19" Grid.ColumnSpan="2"/>
+        <Label x:Name="Label_URL" Content="URL:" HorizontalAlignment="Left" Margin="29,15,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.429,1.343" Height="23" Width="34"/>
+        <TextBox x:Name="Textbox_URL" HorizontalAlignment="Left" Height="23" Margin="107,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="https://kwejk.pl/" Grid.ColumnSpan="2"/>
+        <Label x:Name="Label_Text" Content="Tekst" HorizontalAlignment="Left" Margin="29,43,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.866,4.259" Height="23" Width="37"/>
+        <TextBox x:Name="Textbox_Text" HorizontalAlignment="Left" Height="23" Margin="107,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="dokładnie" Grid.ColumnSpan="2"/>
+        <Label x:Name="Label_Mail" Content="Mail:" HorizontalAlignment="Left" Margin="31,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="23" Width="35"/>
+        <TextBox x:Name="Textbox_Mail" HorizontalAlignment="Left" Height="23" Margin="107,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="szcz761@gmail.com" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="ConsoleTextbox" HorizontalAlignment="Left" Height="136" Margin="0,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="ListOfTasks" HorizontalAlignment="Left" Height="194" Margin="64.6,15,0,0" VerticalAlignment="Top" Width="334" Grid.Column="1"/>
+        <Button x:Name="Button_Do_Tasks" Content="Wykonaj!" Grid.Column="1" Margin="64.6,228,238.4,84" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="Button_Clean"  Content="Czysc" Grid.Column="1" Margin="198.6,228,125.4,84" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="Button_Serialize" Content="Serialize" Grid.Column="1" Margin="311.6,228,33.4,113"/>
+        <Button x:Name="Button_Deserialize" Content="Deserialize" Grid.Column="1" Margin="311.6,257,33.4,84"/>
+        <TextBox x:Name="Textbox_Task_Name" HorizontalAlignment="Left" Height="23" Margin="108,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Text="Nowe Zadanie" Grid.ColumnSpan="2"/>
+        <Label x:Name="Label_Task_Name" Content="Nazwa zadania:" HorizontalAlignment="Left" Margin="0,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="23" Width="124"/>
 
 
     </Grid>
