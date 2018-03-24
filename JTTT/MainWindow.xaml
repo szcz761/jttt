@@ -5,27 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JTTT"
         mc:Ignorable="d"
-        Title="MainWindow" Height="394.667" Width="712">
+        Title="MainWindow" 
+        MinHeight="400" Height="400" MaxHeight="400" 
+        MinWidth="810" Width="810" MaxWidth="810">
     <Grid Margin="0,0,3.6,-0.2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="8*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Button_Add_Task" Content="Dodaj zadanie do listy" HorizontalAlignment="Left" Margin="107,127,0,0" VerticalAlignment="Top" Width="222" Click="Button_Wykonaj_Click" RenderTransformOrigin="0.524,-1.033" Height="19" Grid.ColumnSpan="2"/>
+        <Button x:Name="Button_Add_Task" Content="Dodaj zadanie do listy" HorizontalAlignment="Left" Margin="107,127,0,0" VerticalAlignment="Top" Width="222" Click="Button_Add_Task_Click" RenderTransformOrigin="0.524,-1.033" Height="19" Grid.ColumnSpan="2"/>
         <Label x:Name="Label_URL" Content="URL:" HorizontalAlignment="Left" Margin="29,15,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.429,1.343" Height="23" Width="34"/>
         <TextBox x:Name="Textbox_URL" HorizontalAlignment="Left" Height="23" Margin="107,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="https://kwejk.pl/" Grid.ColumnSpan="2"/>
-        <Label x:Name="Label_Text" Content="Tekst" HorizontalAlignment="Left" Margin="29,43,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.866,4.259" Height="23" Width="37"/>
-        <TextBox x:Name="Textbox_Text" HorizontalAlignment="Left" Height="23" Margin="107,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="dokładnie" Grid.ColumnSpan="2"/>
+        <Label x:Name="Label_Text" Content="Tekst" HorizontalAlignment="Left" Margin="29,43,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.866,4.259" Height="28" Width="37"/>
+        <TextBox x:Name="Textbox_Text" HorizontalAlignment="Left" Height="23" Margin="107,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="nie" Grid.ColumnSpan="2"/>
         <Label x:Name="Label_Mail" Content="Mail:" HorizontalAlignment="Left" Margin="31,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="23" Width="35"/>
-        <TextBox x:Name="Textbox_Mail" HorizontalAlignment="Left" Height="23" Margin="107,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="szcz761@gmail.com" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="ConsoleTextbox" HorizontalAlignment="Left" Height="136" Margin="0,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="2"/>
-        <ListBox x:Name="ListOfTasks" HorizontalAlignment="Left" Height="194" Margin="64.6,15,0,0" VerticalAlignment="Top" Width="334" Grid.Column="1"/>
-        <Button x:Name="Button_Do_Tasks" Content="Wykonaj!" Grid.Column="1" Margin="64.6,228,238.4,84" FontWeight="Bold" FontSize="14"/>
-        <Button x:Name="Button_Clean"  Content="Czysc" Grid.Column="1" Margin="198.6,228,125.4,84" FontWeight="Bold" FontSize="14"/>
-        <Button x:Name="Button_Serialize" Content="Serialize" Grid.Column="1" Margin="311.6,228,33.4,113"/>
-        <Button x:Name="Button_Deserialize" Content="Deserialize" Grid.Column="1" Margin="311.6,257,33.4,84"/>
+        <TextBox x:Name="Textbox_Mail" HorizontalAlignment="Left" Height="23" Margin="107,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="fiwo137@gmail.com" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="ConsoleTextbox" HorizontalAlignment="Left" Height="127" Margin="10,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="ListOfTasks" HorizontalAlignment="Left" Height="282" Margin="64.4,15,0,0" VerticalAlignment="Top" Width="397" Grid.Column="1"
+                 ItemsSource="{Binding _list}"
+                 DisplayMemberPath="TaskProperties"
+                 />
+        <Button x:Name="Button_Do_Tasks" Content="Wykonaj!" Grid.Column="1" Margin="64,300,282.4,15.6" FontWeight="Bold" FontSize="14" Height="50"/>
+        <Button x:Name="Button_Clean"  Content="Czysc" Grid.Column="1" Margin="204.4,300,150.8,13" FontWeight="Bold" FontSize="14" Height="50" Click="Button_Clean_Click"/>
+        <Button x:Name="Button_Serialize" Content="Serialize" Grid.Column="1" Margin="336,330,25.4,15.6" Height="25"/>
+        <Button x:Name="Button_Deserialize" Content="Deserialize" Grid.Column="1" Margin="336,300,25.4,40.6" Height="25"/>
         <TextBox x:Name="Textbox_Task_Name" HorizontalAlignment="Left" Height="23" Margin="108,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Text="Nowe Zadanie" Grid.ColumnSpan="2"/>
-        <Label x:Name="Label_Task_Name" Content="Nazwa zadania:" HorizontalAlignment="Left" Margin="0,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="23" Width="124"/>
+        <Label x:Name="Label_Task_Name" Content="Nazwa zadania:" HorizontalAlignment="Left" Margin="0,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="28" Width="124"/>
 
 
     </Grid>

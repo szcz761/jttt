@@ -847,3 +847,43 @@ Nazwa parametru: length
 21.03.2018 20:17:49SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpgnameOfImage: tmp.png
 21.03.2018 20:17:51SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/ozz17M2QJOkIkcE5.jpgnameOfImage: tmp.png
 21.03.2018 20:30:34 ====================== Uruchomienie programu ======================
+24.03.2018 22:40:45 ====================== Uruchomienie programu ======================
+24.03.2018 22:43:39 ====================== Uruchomienie programu ======================
+24.03.2018 22:43:42 Błąd: System.NullReferenceException: Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+   w JTTT.MainWindow.Button_Add_Task_Click(Object sender, RoutedEventArgs e) w C:\Users\fiwo1\Desktop\jttt\jttt\JTTT\MainWindow.xaml.cs:wiersz 35
+24.03.2018 22:45:22 ====================== Uruchomienie programu ======================
+24.03.2018 22:45:24 Błąd: System.NullReferenceException: Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+   w JTTT.MainWindow.Button_Add_Task_Click(Object sender, RoutedEventArgs e) w C:\Users\fiwo1\Desktop\jttt\jttt\JTTT\MainWindow.xaml.cs:wiersz 35
+24.03.2018 22:45:39 ====================== Uruchomienie programu ======================
+24.03.2018 22:45:46 Błąd: System.NullReferenceException: Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+   w JTTT.MainWindow.Button_Add_Task_Click(Object sender, RoutedEventArgs e) w C:\Users\fiwo1\Desktop\jttt\jttt\JTTT\MainWindow.xaml.cs:wiersz 35
+24.03.2018 22:46:52 ====================== Uruchomienie programu ======================
+24.03.2018 22:46:55 Błąd: System.NullReferenceException: Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+   w JTTT.MainWindow.Button_Add_Task_Click(Object sender, RoutedEventArgs e) w C:\Users\fiwo1\Desktop\jttt\jttt\JTTT\MainWindow.xaml.cs:wiersz 36
+24.03.2018 22:50:31 ====================== Uruchomienie programu ======================
+24.03.2018 22:50:33 Błąd: System.NullReferenceException: Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+   w JTTT.MainWindow.Button_Add_Task_Click(Object sender, RoutedEventArgs e) w C:\Users\fiwo1\Desktop\jttt\jttt\JTTT\MainWindow.xaml.cs:wiersz 36
+24.03.2018 22:50:45 ====================== Uruchomienie programu ======================
+24.03.2018 22:50:47 Błąd: System.NullReferenceException: Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+   w JTTT.MainWindow.Button_Add_Task_Click(Object sender, RoutedEventArgs e) w C:\Users\fiwo1\Desktop\jttt\jttt\JTTT\MainWindow.xaml.cs:wiersz 36
+24.03.2018 22:58:13 ====================== Uruchomienie programu ======================
+24.03.2018 22:58:15 Błąd: System.NullReferenceException: Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+   w JTTT.MainWindow.Button_Add_Task_Click(Object sender, RoutedEventArgs e) w C:\Users\fiwo1\Desktop\jttt\jttt\JTTT\MainWindow.xaml.cs:wiersz 36
+24.03.2018 23:01:21 ====================== Uruchomienie programu ======================
+24.03.2018 23:01:24 Błąd: System.NullReferenceException: Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+   w JTTT.MainWindow.Button_Add_Task_Click(Object sender, RoutedEventArgs e) w C:\Users\fiwo1\Desktop\jttt\jttt\JTTT\MainWindow.xaml.cs:wiersz 36
+24.03.2018 23:02:08 ====================== Uruchomienie programu ======================
+24.03.2018 23:12:11 ====================== Uruchomienie programu ======================
+24.03.2018 23:12:45 ====================== Uruchomienie programu ======================
+24.03.2018 23:13:16 ====================== Uruchomienie programu ======================
+24.03.2018 23:49:37 ====================== Uruchomienie programu ======================
+24.03.2018 23:51:33 ====================== Uruchomienie programu ======================
+24.03.2018 23:54:01 ====================== Uruchomienie programu ======================
+24.03.2018 23:55:14 ====================== Uruchomienie programu ======================
+24.03.2018 23:57:18 ====================== Uruchomienie programu ======================
+25.03.2018 00:02:08 ====================== Uruchomienie programu ======================
+25.03.2018 00:04:20 ====================== Uruchomienie programu ======================
+25.03.2018 00:05:28 ====================== Uruchomienie programu ======================
+25.03.2018 00:14:23 ====================== Uruchomienie programu ======================
+25.03.2018 00:16:36 ====================== Uruchomienie programu ======================
+25.03.2018 00:17:21 ====================== Uruchomienie programu ======================

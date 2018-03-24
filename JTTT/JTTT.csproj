@@ -57,6 +57,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Log.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="Tasks.cs" />
     <Page Include="MainWindow.xaml">

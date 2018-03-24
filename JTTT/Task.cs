@@ -9,28 +9,32 @@ namespace JTTT
 {
     class Task
     {
-        private string TextboxText { get; set; }
-        private string TextboxUrl{ get; set; }
-        private string TextboxMail { get; set; }
-        public Task(string textboxText, string textboxUrl, string textboxMail)
+        private string SearchPhrase { get; set; }
+        private string SourceUrl{ get; set; }
+        private string MailAdress { get; set; }
+        private string TaskName { get; set; }
+        public string TaskProperties { get; set; }
+        public Task(string textboxText, string textboxUrl, string textboxMail, string textBoxTaskName)
         {
-            TextboxText = textboxText;
-            TextboxUrl = textboxUrl;
-            TextboxMail = textboxMail;
+            SearchPhrase = textboxText;
+            SourceUrl = textboxUrl;
+            MailAdress = textboxMail;
+            TaskName = textBoxTaskName;
+            TaskProperties = TaskName + ": Obrazek \"" + SearchPhrase + "\" z " + SourceUrl + " dla " + MailAdress;
         }
 
         public string process()
         {
             try
             {
-                Log.WriteToLog("Nacisniecie przyciksu wykonaj. Z parametrami: url: " + TextboxUrl + " mail: " + TextboxMail + " keyword: " + TextboxText);
-                var HTML = new PageHtml(TextboxUrl);
-                var mailsender = new MailSender(TextboxMail);
-                var URL_image = HTML.SearchSentence(TextboxText);
+                Log.WriteToLog("Nacisniecie przyciksu wykonaj. Z parametrami: url: " + SourceUrl + " mail: " + MailAdress + " keyword: " + SearchPhrase);
+                var HTML = new PageHtml(SourceUrl);
+                var mailsender = new MailSender(MailAdress);
+                var URL_image = HTML.SearchSentence(SearchPhrase);
                 if (URL_image == "")        
                     return "Nie znaleziono obrazka! Prawdopodobnie zła nazwa obrazka! \n";
                 HTML.SaveImage(URL_image, "tmp.png");
-                mailsender.SendEmail(TextboxText, HTML.SearchSentence(TextboxText), "tmp.png");
+                mailsender.SendEmail(SearchPhrase, HTML.SearchSentence(SearchPhrase), "tmp.png");
                 return "Barwo! Wysłałeś Obrazek o URL: " + URL_image + "\n";
             }
             catch (Exception x)
