@@ -23,9 +23,7 @@ namespace JTTT
         {
             try
             {
-                using (StreamWriter log = File.AppendText("JTTT.log"))
-                    log.WriteLine(DateTime.Now.ToString() + " Nacisniecie przyciksu wykonaj. Z parametrami: url: " + TextboxUrl + " mail: " + TextboxMail + " keyword: " + TextboxText);   
-
+                Log.WriteToLog("Nacisniecie przyciksu wykonaj. Z parametrami: url: " + TextboxUrl + " mail: " + TextboxMail + " keyword: " + TextboxText);
                 var HTML = new PageHtml(TextboxUrl);
                 var mailsender = new MailSender(TextboxMail);
                 var URL_image = HTML.SearchSentence(TextboxText);
@@ -36,12 +34,8 @@ namespace JTTT
                 return "Barwo! Wysłałeś Obrazek o URL: " + URL_image + "\n";
             }
             catch (Exception x)
-            {            
-                using (StreamWriter log = File.AppendText("JTTT.log"))
-                {
-                    log.WriteLine(DateTime.Now.ToString() + "Błąd: " + x + "\n");
-                    log.Close();
-                }
+            {    
+                Log.WriteToLog("Błąd: " + x);
                 return "Błąd: " + x.Message.ToString() + "\n";
             }
         }

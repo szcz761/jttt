@@ -17,9 +17,7 @@ namespace JTTT
         public MainWindow()
         {
             InitializeComponent();
-            StreamWriter log = File.AppendText("JTTT.log");
-            log.WriteLine(DateTime.Now.ToString() + " ====================== Uruchomienie programu ======================");
-            log.Close();
+            Log.WriteToLog("====================== Uruchomienie programu ======================");
         }
     
 
