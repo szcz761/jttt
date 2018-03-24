@@ -21,13 +21,6 @@ namespace JTTT
             tasks = new Tasks();
             ListOfTasks.DataContext = tasks;
         }
-    
-
-    /*private void Button_Wykonaj_Click(object sender, RoutedEventArgs e)
-        {
-            Task task = new Task(Textbox_Text.Text, Textbox_URL.Text, Textbox_Mail.Text, Textbox_Task_Name.Text);
-            ConsoleTextbox.Text = task.process();
-        }*/
 
         private void Button_Add_Task_Click(object sender, RoutedEventArgs e)
         {
@@ -45,6 +38,11 @@ namespace JTTT
         private void Button_Clean_Click(object sender, RoutedEventArgs e)
         {
             tasks.RemoveTasks();
+        }
+
+        private void Button_Do_Tasks_Click(object sender, RoutedEventArgs e)
+        {
+            tasks.DoTasks();
         }
     }
 }

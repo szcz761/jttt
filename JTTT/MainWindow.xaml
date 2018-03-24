@@ -25,7 +25,7 @@
                  ItemsSource="{Binding _list}"
                  DisplayMemberPath="TaskProperties"
                  />
-        <Button x:Name="Button_Do_Tasks" Content="Wykonaj!" Grid.Column="1" Margin="64,300,282.4,15.6" FontWeight="Bold" FontSize="14" Height="50"/>
+        <Button x:Name="Button_Do_Tasks" Content="Wykonaj!" Grid.Column="1" Margin="64,300,282.4,15.6" FontWeight="Bold" FontSize="14" Height="50" Click="Button_Do_Tasks_Click"/>
         <Button x:Name="Button_Clean"  Content="Czysc" Grid.Column="1" Margin="204.4,300,150.8,13" FontWeight="Bold" FontSize="14" Height="50" Click="Button_Clean_Click"/>
         <Button x:Name="Button_Serialize" Content="Serialize" Grid.Column="1" Margin="336,330,25.4,15.6" Height="25"/>
         <Button x:Name="Button_Deserialize" Content="Deserialize" Grid.Column="1" Margin="336,300,25.4,40.6" Height="25"/>

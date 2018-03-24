@@ -27,5 +27,13 @@ namespace JTTT
         {
             _list.Clear();
         }
+
+        public void DoTasks()
+        {
+            foreach(Task t in _list)
+            {
+                t.process();
+            }
+        }
     }
 }

@@ -887,3 +887,92 @@ Nazwa parametru: length
 25.03.2018 00:14:23 ====================== Uruchomienie programu ======================
 25.03.2018 00:16:36 ====================== Uruchomienie programu ======================
 25.03.2018 00:17:21 ====================== Uruchomienie programu ======================
+25.03.2018 00:23:43 ====================== Uruchomienie programu ======================
+25.03.2018 00:24:03 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+25.03.2018 00:24:03 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:24:03Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:24:03 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:24:04 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpg Pod nazwą: tmp.png
+25.03.2018 00:24:04 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:24:04SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpgnameOfImage: tmp.png
+25.03.2018 00:24:08SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpgnameOfImage: tmp.png
+25.03.2018 00:24:08 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: moze
+25.03.2018 00:24:08 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:24:08Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:24:08 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:24:08 25.03.2018 00:24:08SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+25.03.2018 00:24:32 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+25.03.2018 00:24:32 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:24:32Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:24:32 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:24:33 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpg Pod nazwą: tmp.png
+25.03.2018 00:24:33 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:24:33SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpgnameOfImage: tmp.png
+25.03.2018 00:24:35SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpgnameOfImage: tmp.png
+25.03.2018 00:24:35 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: moze
+25.03.2018 00:24:35 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:24:35Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:24:36 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:24:36 25.03.2018 00:24:36SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+25.03.2018 00:29:50 ====================== Uruchomienie programu ======================
+25.03.2018 00:31:34 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: wtf
+25.03.2018 00:31:34 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:31:34Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:31:34 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:31:34 25.03.2018 00:31:34SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+25.03.2018 00:31:34 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://demotywatory.pl/ mail: fiwo137@gmail.com keyword: zdrada
+25.03.2018 00:31:34 Stworzenie PAgeHtml z  url: https://demotywatory.pl/
+25.03.2018 00:31:34Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:31:35 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:31:35 25.03.2018 00:31:35SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+25.03.2018 00:31:35 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: mem
+25.03.2018 00:31:35 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:31:35Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:31:35 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:31:35 25.03.2018 00:31:35SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+25.03.2018 00:37:05 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: wtf
+25.03.2018 00:37:05 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:37:05Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:37:05 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:37:05 25.03.2018 00:37:05SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+25.03.2018 00:37:05 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://demotywatory.pl/ mail: fiwo137@gmail.com keyword: zdrada
+25.03.2018 00:37:05 Stworzenie PAgeHtml z  url: https://demotywatory.pl/
+25.03.2018 00:37:05Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:37:06 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:37:06 25.03.2018 00:37:06SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+25.03.2018 00:37:06 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: mem
+25.03.2018 00:37:06 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:37:06Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:37:06 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:37:06 25.03.2018 00:37:06SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+25.03.2018 00:37:06 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+25.03.2018 00:37:06 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:37:06Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:37:06 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:37:06 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpg Pod nazwą: tmp.png
+25.03.2018 00:37:06 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:37:06SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpgnameOfImage: tmp.png
+25.03.2018 00:37:09SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpgnameOfImage: tmp.png
+25.03.2018 00:37:50 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: wtf
+25.03.2018 00:37:50 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:37:50Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:37:50 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:37:50 25.03.2018 00:37:50SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+25.03.2018 00:37:50 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://demotywatory.pl/ mail: fiwo137@gmail.com keyword: zdrada
+25.03.2018 00:37:50 Stworzenie PAgeHtml z  url: https://demotywatory.pl/
+25.03.2018 00:37:50Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:37:50 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:37:50 25.03.2018 00:37:50SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+25.03.2018 00:37:50 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: mem
+25.03.2018 00:37:50 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:37:50Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:37:50 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:37:50 25.03.2018 00:37:50SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+25.03.2018 00:37:50 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+25.03.2018 00:37:50 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+25.03.2018 00:37:50Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+25.03.2018 00:37:50 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:37:51 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpg Pod nazwą: tmp.png
+25.03.2018 00:37:51 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+25.03.2018 00:37:51SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpgnameOfImage: tmp.png
+25.03.2018 00:37:53SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/WAyYVFv7zoeepDyj.jpgnameOfImage: tmp.png
