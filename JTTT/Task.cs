@@ -8,17 +8,18 @@ using System.Threading.Tasks;
 
 namespace JTTT
 {
+    [Serializable()]
     public class Task
     {
-        [XmlElement("Searching_Phrase")]
+        [XmlElement("SearchPhrase")]
         public string SearchPhrase { get; set; }
-        [XmlElement("Source_Url")]
+        [XmlElement("SourceUrl")]
         public string SourceUrl{ get; set; }
-        [XmlElement("Client_E-Mail")]
+        [XmlElement("MailAdress")]
         public string MailAdress { get; set; }
-        [XmlElement("Task_Name")]
+        [XmlElement("TaskName")]
         public string TaskName { get; set; }
-        [XmlIgnore]
+        [XmlElement("TaskProperties")]
         public string TaskProperties { get; set; }
         public Task(string textboxText, string textboxUrl, string textboxMail, string textBoxTaskName)
         {

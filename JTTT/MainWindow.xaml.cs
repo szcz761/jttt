@@ -46,7 +46,12 @@ namespace JTTT
 
         private void Button_Deserialize_Click(object sender, RoutedEventArgs e)
         {
+            tasks._list = Serialization.DeserializationFunc("task.xml");
+            Log.WriteToLog(tasks._list.Count.ToString());
 
+            ListOfTasks.InvalidateVisual();
+            ListOfTasks.UpdateLayout();
+            
         }
 
         private void Button_Serialize_Click(object sender, RoutedEventArgs e)
