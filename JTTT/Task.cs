@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -7,12 +8,17 @@ using System.Threading.Tasks;
 
 namespace JTTT
 {
-    class Task
+    public class Task
     {
-        private string SearchPhrase { get; set; }
-        private string SourceUrl{ get; set; }
-        private string MailAdress { get; set; }
-        private string TaskName { get; set; }
+        [XmlElement("Searching_Phrase")]
+        public string SearchPhrase { get; set; }
+        [XmlElement("Source_Url")]
+        public string SourceUrl{ get; set; }
+        [XmlElement("Client_E-Mail")]
+        public string MailAdress { get; set; }
+        [XmlElement("Task_Name")]
+        public string TaskName { get; set; }
+        [XmlIgnore]
         public string TaskProperties { get; set; }
         public Task(string textboxText, string textboxUrl, string textboxMail, string textBoxTaskName)
         {
@@ -21,6 +27,11 @@ namespace JTTT
             MailAdress = textboxMail;
             TaskName = textBoxTaskName;
             TaskProperties = TaskName + ": Obrazek \"" + SearchPhrase + "\" z " + SourceUrl + " dla " + MailAdress;
+        }
+
+        public Task()
+        {
+
         }
 
         public string process()

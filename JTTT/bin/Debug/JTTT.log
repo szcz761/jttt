@@ -982,3 +982,56 @@ Nazwa parametru: length
 25.03.2018 20:54:13 ====================== Uruchomienie programu ======================
 25.03.2018 20:54:27 ====================== Uruchomienie programu ======================
 25.03.2018 20:54:46 ====================== Uruchomienie programu ======================
+27.03.2018 17:59:43 ====================== Uruchomienie programu ======================
+27.03.2018 18:01:14 ====================== Uruchomienie programu ======================
+27.03.2018 18:03:14 ====================== Uruchomienie programu ======================
+27.03.2018 18:04:37 ====================== Uruchomienie programu ======================
+27.03.2018 18:08:55 ====================== Uruchomienie programu ======================
+27.03.2018 18:10:25 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+27.03.2018 18:10:25 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+27.03.2018 18:10:25Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+27.03.2018 18:10:26 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:26 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpg Pod nazwą: tmp.png
+27.03.2018 18:10:26 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:26SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png
+27.03.2018 18:10:30SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png
+27.03.2018 18:10:30 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+27.03.2018 18:10:30 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+27.03.2018 18:10:30Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+27.03.2018 18:10:30 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:30 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpg Pod nazwą: tmp.png
+27.03.2018 18:10:30 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:30SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png
+27.03.2018 18:10:32SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png
+27.03.2018 18:10:32 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+27.03.2018 18:10:32 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+27.03.2018 18:10:32Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+27.03.2018 18:10:32 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:33 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpg Pod nazwą: tmp.png
+27.03.2018 18:10:33 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:33SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png
+27.03.2018 18:10:35SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png
+27.03.2018 18:10:35 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+27.03.2018 18:10:35 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+27.03.2018 18:10:35Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+27.03.2018 18:10:35 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:35 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpg Pod nazwą: tmp.png
+27.03.2018 18:10:35 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:35SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png
+27.03.2018 18:10:37SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png
+27.03.2018 18:10:37 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+27.03.2018 18:10:37 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+27.03.2018 18:10:37Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+27.03.2018 18:10:37 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:37 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpg Pod nazwą: tmp.png
+27.03.2018 18:10:37 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:37SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png
+27.03.2018 18:10:39SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png
+27.03.2018 18:10:39 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+27.03.2018 18:10:39 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+27.03.2018 18:10:39Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+27.03.2018 18:10:39 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:39 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpg Pod nazwą: tmp.png
+27.03.2018 18:10:39 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+27.03.2018 18:10:39SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png
+27.03.2018 18:10:41SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/03/A7pzR9FyZ22jwEdQ.jpgnameOfImage: tmp.png

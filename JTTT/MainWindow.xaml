@@ -27,8 +27,8 @@
                  />
         <Button x:Name="Button_Do_Tasks" Content="Wykonaj!" Grid.Column="1" Margin="64,272,292,16.2" FontWeight="Bold" FontSize="14" Click="Button_Do_Tasks_Click"/>
         <Button x:Name="Button_Clean"  Content="Czysc" Grid.Column="1" Margin="204,272,160,16.2" FontWeight="Bold" FontSize="14" Click="Button_Clean_Click"/>
-        <Button x:Name="Button_Serialize" Content="Serialize" Grid.Column="1" Margin="336,317,25,16.2"/>
-        <Button x:Name="Button_Deserialize" Content="Deserialize" Grid.Column="1" Margin="336,272,25,57.2"/>
+        <Button x:Name="Button_Serialize" Content="Serialize" Grid.Column="1" Margin="336,317,25,16.2" Click="Button_Serialize_Click"/>
+        <Button x:Name="Button_Deserialize" Content="Deserialize" Grid.Column="1" Margin="336,272,25,57.2" Click="Button_Deserialize_Click"/>
         <TextBox x:Name="Textbox_Task_Name" HorizontalAlignment="Left" Height="23" Margin="108,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Text="Nowe Zadanie" Grid.ColumnSpan="2"/>
         <Label x:Name="Label_Task_Name" Content="Nazwa zadania:" HorizontalAlignment="Left" Margin="0,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="28" Width="124"/>
 

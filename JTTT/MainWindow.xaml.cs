@@ -2,8 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.IO;
-
-
+using System.Collections.ObjectModel;
 
 namespace JTTT
 {
@@ -43,6 +42,16 @@ namespace JTTT
         private void Button_Do_Tasks_Click(object sender, RoutedEventArgs e)
         {
             tasks.DoTasks();
+        }
+
+        private void Button_Deserialize_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Serialize_Click(object sender, RoutedEventArgs e)
+        {
+            Serialization.SerializationFunc<ObservableCollection<Task>>(tasks._list);
         }
     }
 }
