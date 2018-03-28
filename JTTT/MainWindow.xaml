@@ -21,7 +21,7 @@
         <Label x:Name="Label_Mail" Content="Mail:" HorizontalAlignment="Left" Margin="31,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="23" Width="35"/>
         <TextBox x:Name="Textbox_Mail" HorizontalAlignment="Left" Height="23" Margin="107,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="fiwo137@gmail.com" Grid.ColumnSpan="2"/>
         <TextBox x:Name="ConsoleTextbox" HorizontalAlignment="Left" Height="127" Margin="10,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="2"/>
-        <ListBox x:Name="ListOfTasks" HorizontalAlignment="Left" Height="252" Margin="64,15,0,0" VerticalAlignment="Top" Width="397" Grid.Column="1"
+        <ListView x:Name="ListOfTasks" HorizontalAlignment="Left" Height="252" Margin="64,15,0,0" VerticalAlignment="Top" Width="397" Grid.Column="1"
                  ItemsSource="{Binding _list}"
                  DisplayMemberPath="TaskProperties"
                  />

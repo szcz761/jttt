@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace JTTT
 {
     
-    class Tasks
+    class Tasks 
     {
         public ObservableCollection<Task> _list { get; set; }
 
@@ -16,7 +17,6 @@ namespace JTTT
         {
             _list = new ObservableCollection<Task>();
         }
-
 
         public void AddTask(Task newTask)
         {
@@ -35,5 +35,6 @@ namespace JTTT
                 t.process();
             }
         }
+
     }
 }

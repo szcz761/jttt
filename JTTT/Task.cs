@@ -5,12 +5,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace JTTT
 {
     [Serializable()]
-    public class Task
+    public class Task : INotifyPropertyChanged
     {
+        private string _taskProperties;
         [XmlElement("SearchPhrase")]
         public string SearchPhrase { get; set; }
         [XmlElement("SourceUrl")]
@@ -20,7 +22,8 @@ namespace JTTT
         [XmlElement("TaskName")]
         public string TaskName { get; set; }
         [XmlElement("TaskProperties")]
-        public string TaskProperties { get; set; }
+        public string TaskProperties { get { return _taskProperties; }
+                                        set { _taskProperties = value; NotifyPropertyChanged("TaskProperties"); } }
         public Task(string textboxText, string textboxUrl, string textboxMail, string textBoxTaskName)
         {
             SearchPhrase = textboxText;
@@ -34,6 +37,8 @@ namespace JTTT
         {
 
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public string process()
         {
@@ -53,6 +58,15 @@ namespace JTTT
             {    
                 Log.WriteToLog("Błąd: " + x);
                 return "Błąd: " + x.Message.ToString() + "\n";
+            }
+        }
+
+        private void NotifyPropertyChanged(string value)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(value));
             }
         }
     }
