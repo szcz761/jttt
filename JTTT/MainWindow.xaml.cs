@@ -12,13 +12,15 @@ namespace JTTT
     public partial class MainWindow : Window
     {
         Tasks tasks;
+        DBManager DataBase;
       
         public MainWindow()
         {
             InitializeComponent();
             Log.WriteToLog("====================== Uruchomienie programu ======================");
             tasks = new Tasks();
-            ListOfTasks.DataContext = tasks;
+            DataBase = new DBManager();
+            ListOfTasks.DataContext = DataBase;//<<==========================================================TU zmiana ale nie wiem na co 
         }
 
         private void Button_Add_Task_Click(object sender, RoutedEventArgs e)
@@ -26,7 +28,8 @@ namespace JTTT
             try
             {
                 Task newTask = new Task(Textbox_Text.Text, Textbox_URL.Text, Textbox_Mail.Text, Textbox_Task_Name.Text);
-                tasks.AddTask(newTask);
+                //tasks.AddTask(newTask);
+                DataBase.AddTask(newTask);
             }
             catch (Exception x)
             {
@@ -36,12 +39,14 @@ namespace JTTT
 
         private void Button_Clean_Click(object sender, RoutedEventArgs e)
         {
-            tasks.RemoveTasks();
+            //tasks.RemoveTasks();
+            DataBase.RemoveTasks();
         }
 
         private void Button_Do_Tasks_Click(object sender, RoutedEventArgs e)
         {
-            tasks.DoTasks();
+            //tasks.DoTasks();
+            DataBase.DoTasks();
         }
 
         private void Button_Deserialize_Click(object sender, RoutedEventArgs e)
@@ -50,7 +55,8 @@ namespace JTTT
             Log.WriteToLog(tasks._list.Count.ToString());
             while(tmp.Count > 0)
             {
-                tasks._list.Add(tmp[0]);
+                //tasks._list.Add(tmp[0]);
+                DataBase.AddTask(tmp[0]);
                 tmp.RemoveAt(0);
             }
             /*ListOfTasks.InvalidateVisual();
@@ -61,7 +67,7 @@ namespace JTTT
 
         private void Button_Serialize_Click(object sender, RoutedEventArgs e)
         {
-            Serialization.SerializationFunc<ObservableCollection<Task>>(tasks._list);
+            Serialization.SerializationFunc<ObservableCollection<Task>>(DataBase.GetTasks());
         }
     }
 }

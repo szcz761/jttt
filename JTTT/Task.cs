@@ -12,6 +12,7 @@ namespace JTTT
     [Serializable()]
     public class Task : INotifyPropertyChanged
     {
+        public int Id { get; set; }
         private string _taskProperties;
         [XmlElement("SearchPhrase")]
         public string SearchPhrase { get; set; }
