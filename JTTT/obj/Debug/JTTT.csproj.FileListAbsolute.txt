@@ -96,3 +96,9 @@ C:\Users\Szymon\Desktop\JTTT\jttt\JTTT\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Szymon\Desktop\JTTT\jttt\JTTT\bin\Debug\EntityFramework.xml
 C:\Users\Szymon\Desktop\JTTT\jttt\JTTT\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Szymon\Desktop\JTTT\jttt\JTTT\bin\Debug\Newtonsoft.Json.xml
+H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\EntityFramework.dll
+H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\EntityFramework.SqlServer.dll
+H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\Newtonsoft.Json.dll
+H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\EntityFramework.xml
+H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\EntityFramework.SqlServer.xml
+H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\Newtonsoft.Json.xml

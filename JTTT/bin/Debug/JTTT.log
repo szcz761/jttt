@@ -837,3 +837,71 @@ Tasks: EntityType: EntitySet 'Tasks' is based on type 'Task' that has no keys de
 04.04.2018 23:51:15 0
 04.04.2018 23:52:22 ====================== Uruchomienie programu ======================
 04.04.2018 23:54:06 ====================== Uruchomienie programu ======================
+06.04.2018 19:04:19 ====================== Uruchomienie programu ======================
+06.04.2018 19:15:46 ====================== Uruchomienie programu ======================
+06.04.2018 19:21:57 ====================== Uruchomienie programu ======================
+06.04.2018 19:55:06 ====================== Uruchomienie programu ======================
+06.04.2018 19:57:23 Zdeserializowano
+06.04.2018 19:57:23 0
+06.04.2018 19:59:12 ====================== Uruchomienie programu ======================
+06.04.2018 20:00:25 ====================== Uruchomienie programu ======================
+06.04.2018 20:00:37 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+06.04.2018 20:00:37 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+06.04.2018 20:00:37Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+06.04.2018 20:00:37 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:37 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpg Pod nazwą: tmp.png
+06.04.2018 20:00:37 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:37SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:41SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:41 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+06.04.2018 20:00:41 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+06.04.2018 20:00:41Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+06.04.2018 20:00:41 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:41 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpg Pod nazwą: tmp.png
+06.04.2018 20:00:42 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:42SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:44SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:44 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+06.04.2018 20:00:44 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+06.04.2018 20:00:44Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+06.04.2018 20:00:44 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:44 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpg Pod nazwą: tmp.png
+06.04.2018 20:00:44 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:44SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:47SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:47 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+06.04.2018 20:00:47 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+06.04.2018 20:00:47Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+06.04.2018 20:00:47 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:47 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpg Pod nazwą: tmp.png
+06.04.2018 20:00:47 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:47SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:50SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:50 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+06.04.2018 20:00:50 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+06.04.2018 20:00:50Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+06.04.2018 20:00:50 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:50 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpg Pod nazwą: tmp.png
+06.04.2018 20:00:50 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:50SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:52SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:52 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+06.04.2018 20:00:52 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+06.04.2018 20:00:52Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+06.04.2018 20:00:53 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:53 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpg Pod nazwą: tmp.png
+06.04.2018 20:00:53 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:53SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:55SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:55 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+06.04.2018 20:00:55 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+06.04.2018 20:00:55Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+06.04.2018 20:00:55 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:55 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpg Pod nazwą: tmp.png
+06.04.2018 20:00:56 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+06.04.2018 20:00:56SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:00:58SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/tB1AucMJvr5gbrG5.jpgnameOfImage: tmp.png
+06.04.2018 20:07:38 ====================== Uruchomienie programu ======================
+06.04.2018 20:07:49 ====================== Uruchomienie programu ======================
+06.04.2018 20:10:27 ====================== Uruchomienie programu ======================
+06.04.2018 20:10:45 ====================== Uruchomienie programu ======================

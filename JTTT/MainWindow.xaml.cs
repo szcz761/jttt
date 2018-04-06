@@ -11,16 +11,17 @@ namespace JTTT
     /// </summary>
     public partial class MainWindow : Window
     {
-        Tasks tasks;
+        //Tasks tasks;
         DBManager DataBase;
       
         public MainWindow()
         {
             InitializeComponent();
             Log.WriteToLog("====================== Uruchomienie programu ======================");
-            tasks = new Tasks();
+            //tasks = new Tasks();
             DataBase = new DBManager();
-            ListOfTasks.DataContext = DataBase;//<<==========================================================TU zmiana ale nie wiem na co 
+            //ListOfTasks.DataContext = DataBase.GetTasks();//<<==========================================================TU zmiana ale nie wiem na co 
+            DataBase.UpdateTextView(ListOfTasks);
         }
 
         private void Button_Add_Task_Click(object sender, RoutedEventArgs e)
@@ -30,6 +31,8 @@ namespace JTTT
                 Task newTask = new Task(Textbox_Text.Text, Textbox_URL.Text, Textbox_Mail.Text, Textbox_Task_Name.Text);
                 //tasks.AddTask(newTask);
                 DataBase.AddTask(newTask);
+                ListOfTasks.Items.Add(newTask);
+                //ListOfTasks.SourceUpdated();
             }
             catch (Exception x)
             {
@@ -38,18 +41,17 @@ namespace JTTT
         }
 
         private void Button_Clean_Click(object sender, RoutedEventArgs e)
-        {
-            //tasks.RemoveTasks();
+        { 
             DataBase.RemoveTasks();
+            ListOfTasks.Items.Clear();
         }
 
         private void Button_Do_Tasks_Click(object sender, RoutedEventArgs e)
         {
-            //tasks.DoTasks();
             DataBase.DoTasks();
         }
 
-        private void Button_Deserialize_Click(object sender, RoutedEventArgs e)
+       /* private void Button_Deserialize_Click(object sender, RoutedEventArgs e)
         {
             ObservableCollection<Task> tmp = Serialization.DeserializationFunc("task.xml");
             Log.WriteToLog(tasks._list.Count.ToString());
@@ -62,12 +64,12 @@ namespace JTTT
             /*ListOfTasks.InvalidateVisual();
             ListOfTasks.UpdateLayout();
             ListOfTasks.DataContext = tasks;
-            ListOfTasks.Items.Refresh();*/
+            ListOfTasks.Items.Refresh();
         }
 
         private void Button_Serialize_Click(object sender, RoutedEventArgs e)
         {
             Serialization.SerializationFunc<ObservableCollection<Task>>(DataBase.GetTasks());
-        }
+        }*/
     }
 }
