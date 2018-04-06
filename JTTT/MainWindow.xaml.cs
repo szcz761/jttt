@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.IO;
 using System.Collections.ObjectModel;
+using Jeson_Test_JTTT4._1_;
 
 namespace JTTT
 {
@@ -51,25 +52,31 @@ namespace JTTT
             DataBase.DoTasks();
         }
 
-       /* private void Button_Deserialize_Click(object sender, RoutedEventArgs e)
+        private void Button_Pogoda_Click(object sender, RoutedEventArgs e)
         {
-            ObservableCollection<Task> tmp = Serialization.DeserializationFunc("task.xml");
-            Log.WriteToLog(tasks._list.Count.ToString());
-            while(tmp.Count > 0)
-            {
-                //tasks._list.Add(tmp[0]);
-                DataBase.AddTask(tmp[0]);
-                tmp.RemoveAt(0);
-            }
-            /*ListOfTasks.InvalidateVisual();
-            ListOfTasks.UpdateLayout();
-            ListOfTasks.DataContext = tasks;
-            ListOfTasks.Items.Refresh();
+            Window1 win2 = new Window1();
+            win2.Show();
         }
 
-        private void Button_Serialize_Click(object sender, RoutedEventArgs e)
-        {
-            Serialization.SerializationFunc<ObservableCollection<Task>>(DataBase.GetTasks());
-        }*/
+        /* private void Button_Deserialize_Click(object sender, RoutedEventArgs e)
+         {
+             ObservableCollection<Task> tmp = Serialization.DeserializationFunc("task.xml");
+             Log.WriteToLog(tasks._list.Count.ToString());
+             while(tmp.Count > 0)
+             {
+                 //tasks._list.Add(tmp[0]);
+                 DataBase.AddTask(tmp[0]);
+                 tmp.RemoveAt(0);
+             }
+             /*ListOfTasks.InvalidateVisual();
+             ListOfTasks.UpdateLayout();
+             ListOfTasks.DataContext = tasks;
+             ListOfTasks.Items.Refresh();
+         }
+
+         private void Button_Serialize_Click(object sender, RoutedEventArgs e)
+         {
+             Serialization.SerializationFunc<ObservableCollection<Task>>(DataBase.GetTasks());
+         }*/
     }
 }

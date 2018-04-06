@@ -102,3 +102,5 @@ H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\Newtonsoft.Json.dll
 H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\EntityFramework.xml
 H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\EntityFramework.SqlServer.xml
 H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\Newtonsoft.Json.xml
+H:\Programy\Visual Studio\JTTT\jttt\JTTT\obj\Debug\Window1.g.cs
+H:\Programy\Visual Studio\JTTT\jttt\JTTT\obj\Debug\Window1.baml

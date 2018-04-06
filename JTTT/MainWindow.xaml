@@ -29,6 +29,7 @@
         <Button x:Name="Button_Clean"  Content="Czysc" Grid.Column="1" Margin="204,272,160,16.2" FontWeight="Bold" FontSize="14" Click="Button_Clean_Click"/>
         <TextBox x:Name="Textbox_Task_Name" HorizontalAlignment="Left" Height="23" Margin="108,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Text="Nowe Zadanie" Grid.ColumnSpan="2"/>
         <Label x:Name="Label_Task_Name" Content="Nazwa zadania:" HorizontalAlignment="Left" Margin="0,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="28" Width="124"/>
+        <Button x:Name="Button_Pogoda" Content="Sprawdż Pogodę" Grid.Column="1" HorizontalAlignment="Left" Margin="336,272,0,0" VerticalAlignment="Top" Width="125" Height="81" FontSize="14" Click="Button_Pogoda_Click" AutomationProperties.IsColumnHeader="True" FontWeight="Bold"/>
 
 
     </Grid>

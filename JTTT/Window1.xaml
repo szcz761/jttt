@@ -1,0 +1,26 @@
+﻿<Window x:Class="Jeson_Test_JTTT4._1_.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jeson_Test_JTTT4._1_"
+        mc:Ignorable="d"
+        Title="Window1" Height="300" Width="368.644">
+    <Grid>
+        <TextBox x:Name="TBMiasto" HorizontalAlignment="Left" Height="23" Margin="104,28,0,0" TextWrapping="Wrap" Text="Wrocław" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Miasto:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,24,0,0"/>
+        <TextBox x:Name="TBPogoda" HorizontalAlignment="Left" Height="83" Margin="10,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
+        <Button Content="Sprawdź Pogodę" HorizontalAlignment="Left" VerticalAlignment="Top" Width="174" Margin="50,83,0,0" Click="Button_Click"/>
+        <Image x:Name="Icon" HorizontalAlignment="Left" Height="83" Margin="197,135,0,0" VerticalAlignment="Top" Width="109" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.975"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.936"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+</Window>
