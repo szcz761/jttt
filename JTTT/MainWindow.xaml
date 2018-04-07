@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:local="clr-namespace:JTTT"
         mc:Ignorable="d"
         Title="MainWindow" 
@@ -13,13 +14,9 @@
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="8*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Button_Add_Task" Content="Dodaj zadanie do listy" HorizontalAlignment="Left" Margin="107,127,0,0" VerticalAlignment="Top" Width="222" Click="Button_Add_Task_Click" RenderTransformOrigin="0.524,-1.033" Height="19" Grid.ColumnSpan="2"/>
-        <Label x:Name="Label_URL" Content="URL:" HorizontalAlignment="Left" Margin="29,15,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.429,1.343" Height="23" Width="34"/>
-        <TextBox x:Name="Textbox_URL" HorizontalAlignment="Left" Height="23" Margin="107,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="https://kwejk.pl/" Grid.ColumnSpan="2"/>
-        <Label x:Name="Label_Text" Content="Tekst" HorizontalAlignment="Left" Margin="29,43,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.866,4.259" Height="28" Width="37"/>
-        <TextBox x:Name="Textbox_Text" HorizontalAlignment="Left" Height="23" Margin="107,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="nie" Grid.ColumnSpan="2"/>
-        <Label x:Name="Label_Mail" Content="Mail:" HorizontalAlignment="Left" Margin="31,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="23" Width="35"/>
-        <TextBox x:Name="Textbox_Mail" HorizontalAlignment="Left" Height="23" Margin="107,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="szcz761@gmail.com" Grid.ColumnSpan="2"/>
+        <Button x:Name="Button_Add_Task" Content="Dodaj zadanie do listy" HorizontalAlignment="Left" Margin="99,193,0,0" VerticalAlignment="Top" Width="222" Click="Button_Add_Task_Click" RenderTransformOrigin="0.524,-1.033" Height="19" Grid.ColumnSpan="2"/>
+        <Label x:Name="Label_Mail" Content="Mail:" HorizontalAlignment="Left" Margin="23,137,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="23" Width="35"/>
+        <TextBox x:Name="Textbox_Mail" HorizontalAlignment="Left" Height="23" Margin="99,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="szcz761@gmail.com" Grid.ColumnSpan="2"/>
         <TextBox x:Name="ConsoleTextbox" HorizontalAlignment="Left" Height="127" Margin="10,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="2"/>
         <ListView x:Name="ListOfTasks" HorizontalAlignment="Left" Height="252" Margin="64,15,0,0" VerticalAlignment="Top" Width="397" Grid.Column="1"
                  ItemsSource="{Binding lists}"
@@ -27,9 +24,29 @@
                  />
         <Button x:Name="Button_Do_Tasks" Content="Wykonaj!" Grid.Column="1" Margin="64,272,292,16.2" FontWeight="Bold" FontSize="14" Click="Button_Do_Tasks_Click"/>
         <Button x:Name="Button_Clean"  Content="Czysc" Grid.Column="1" Margin="204,272,160,16.2" FontWeight="Bold" FontSize="14" Click="Button_Clean_Click"/>
-        <TextBox x:Name="Textbox_Task_Name" HorizontalAlignment="Left" Height="23" Margin="108,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Text="Nowe Zadanie" Grid.ColumnSpan="2"/>
-        <Label x:Name="Label_Task_Name" Content="Nazwa zadania:" HorizontalAlignment="Left" Margin="0,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="28" Width="124"/>
+        <TextBox x:Name="Textbox_Task_Name" HorizontalAlignment="Left" Height="23" Margin="100,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Text="Nowe Zadanie" Grid.ColumnSpan="2"/>
+        <Label x:Name="Label_Task_Name" Content="Nazwa zadania:" HorizontalAlignment="Left" Margin="-8,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="28" Width="124"/>
         <Button x:Name="Button_Pogoda" Content="Sprawdż Pogodę" Grid.Column="1" HorizontalAlignment="Left" Margin="336,272,0,0" VerticalAlignment="Top" Width="125" Height="81" FontSize="14" Click="Button_Pogoda_Click" AutomationProperties.IsColumnHeader="True" FontWeight="Bold"/>
+        <TabControl HorizontalAlignment="Left" Height="122" Margin="10,10,0,0" VerticalAlignment="Top" Width="311" Grid.ColumnSpan="2">
+            <TabItem Header="Pogoda">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="TextBox_Miasto" HorizontalAlignment="Left" Height="23" Margin="64,14,0,0" TextWrapping="Wrap" Text="Wrocław" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Miasot:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Temperatura:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                    <xctk:IntegerUpDown x:Name="UpDownControl_Temp" HorizontalAlignment="Left" Margin="104,47,0,0" VerticalAlignment="Top" Width="42" Text="0" Value="17" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Kwejki" Height="22" VerticalAlignment="Bottom">
+                <Grid Background="#FFE5E5E5">
+
+                    <Label x:Name="Label_URL" Content="URL:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.429,1.343" Height="23" Width="34"/>
+                    <TextBox x:Name="Textbox_URL" HorizontalAlignment="Left" Height="23" Margin="58,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="https://kwejk.pl/"/>
+                    <Label x:Name="Label_Text" Content="Tekst:" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.866,4.259" Height="28" Width="43"/>
+                    <TextBox x:Name="Textbox_Text" HorizontalAlignment="Left" Height="23" Margin="58,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="nie"/>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
 
 
     </Grid>
