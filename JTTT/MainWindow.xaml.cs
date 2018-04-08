@@ -29,7 +29,11 @@ namespace JTTT
         {
             try
             {
-                Task newTask = new Task(Textbox_Text.Text, Textbox_URL.Text, Textbox_Mail.Text, Textbox_Task_Name.Text);
+                Task newTask;
+                if (TIPogoda.IsFocused)
+                    newTask = new TaskTempSender(TextBox_Miasto.Text, UpDownControl_Temp.Value, Textbox_Mail.Text, Textbox_Task_Name.Text);
+                else
+                    newTask = new TaskKwejkSender(Textbox_Text.Text, Textbox_URL.Text, Textbox_Mail.Text, Textbox_Task_Name.Text);
                 //tasks.AddTask(newTask);
                 DataBase.AddTask(newTask);
                 ListOfTasks.Items.Add(newTask);

@@ -947,3 +947,7 @@ Tasks: EntityType: EntitySet 'Tasks' is based on type 'Task' that has no keys de
 07.04.2018 12:45:31 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
 07.04.2018 12:45:31SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/DI5LXLWkbH5QqHEZ.jpgnameOfImage: tmp.png
 07.04.2018 12:45:33SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/DI5LXLWkbH5QqHEZ.jpgnameOfImage: tmp.png
+07.04.2018 13:32:37 ====================== Uruchomienie programu ======================
+08.04.2018 12:56:09 ====================== Uruchomienie programu ======================
+08.04.2018 13:53:44 ====================== Uruchomienie programu ======================
+08.04.2018 15:24:17 ====================== Uruchomienie programu ======================

@@ -32,7 +32,7 @@ namespace JTTT
         {
             foreach(Task t in _list)
             {
-                t.process();
+                t.Process();
             }
         }
 

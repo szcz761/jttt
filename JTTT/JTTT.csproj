@@ -92,7 +92,9 @@
     <Compile Include="QuickType.cs" />
     <Compile Include="Serialization.cs" />
     <Compile Include="Task.cs" />
+    <Compile Include="TaskKwejkSender.cs" />
     <Compile Include="Tasks.cs" />
+    <Compile Include="TaskTempSender.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>

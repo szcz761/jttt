@@ -57,7 +57,7 @@ namespace JTTT
         {
             foreach (Task t in GetTasks())
             {
-                t.process();
+                t.Process();
             }
         }
 
