@@ -1,0 +1,14 @@
+﻿<Window x:Class="JTTT.WindowDisplay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JTTT"
+        mc:Ignorable="d"
+        Title="WindowDisplay" Height="422.932" Width="487.218">
+    <Grid>
+        <Image x:Name="Icon" HorizontalAlignment="Left" Height="311" Margin="10,71,0,0" VerticalAlignment="Top" Width="459"/>
+        <TextBlock x:Name="TextBoxMessage" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="459" Height="56"/>
+
+    </Grid>
+</Window>

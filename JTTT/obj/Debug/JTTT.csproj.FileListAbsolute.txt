@@ -120,3 +120,5 @@ H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\ro\Xceed.Wpf.AvalonDock.resou
 H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 H:\Programy\Visual Studio\JTTT\jttt\JTTT\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+H:\Programy\Visual Studio\JTTT\jttt\JTTT\obj\Debug\WindowDisplay.g.cs
+H:\Programy\Visual Studio\JTTT\jttt\JTTT\obj\Debug\WindowDisplay.baml

@@ -1107,3 +1107,48 @@ Wiatr: 7,56 km/h
 Ciśnienie: 1007
 Wiatr: 7,56 km/h 
  imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 17:15:20 ====================== Uruchomienie programu ======================
+09.04.2018 17:15:47 Nacisniecie przyciksu wykonaj. wyświetl na ekranie pogodę Z parametrami: miasto: Wrocław
+09.04.2018 17:15:48 Błąd: System.Net.WebException: Nie można rozpoznać nazwy zdalnej: 'api.openweathermap.org'
+   w System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   w System.Net.WebClient.DownloadString(Uri address)
+   w System.Net.WebClient.DownloadString(String address)
+   w JTTT.TaskTempDisplay.Process() w H:\Programy\Visual Studio\JTTT\jttt\JTTT\TaskTempDisplay.cs:wiersz 34
+09.04.2018 17:17:56 ====================== Uruchomienie programu ======================
+09.04.2018 17:18:26 Nacisniecie przyciksu wykonaj. wyświetl na ekranie pogodę Z parametrami: miasto: Wrocław
+09.04.2018 17:18:26 Nacisniecie przyciksu wykonaj. wyświetl na ekranie pogodę Z parametrami: miasto: Wrocław
+09.04.2018 17:18:39 Nacisniecie przyciksu wykonaj. wyświetl na ekranie pogodę Z parametrami: miasto: Wrocław
+09.04.2018 17:18:39 Nacisniecie przyciksu wykonaj. wyświetl na ekranie pogodę Z parametrami: miasto: Wrocław
+09.04.2018 17:18:39 Nacisniecie przyciksu wykonaj. wyświetl na ekranie pogodę Z parametrami: miasto: Wrocław
+09.04.2018 17:19:04 Nacisniecie przyciksu wykonaj. wyświetl na ekranie pogodę Z parametrami: miasto: Wrocław
+09.04.2018 17:19:04 Nacisniecie przyciksu wykonaj. wyświetl na ekranie pogodę Z parametrami: miasto: Wrocław
+09.04.2018 17:19:04 Nacisniecie przyciksu wykonaj. wyświetl na ekranie pogodę Z parametrami: miasto: Wrocław
+09.04.2018 17:19:04 Nacisniecie przyciksu wykonaj. (wyswietl kwejk) Z parametrami: url: https://kwejk.pl/ keyword: wy
+09.04.2018 17:19:04 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+09.04.2018 17:19:05 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 17:22:13 ====================== Uruchomienie programu ======================
+09.04.2018 17:23:05 ====================== Uruchomienie programu ======================
+09.04.2018 17:23:12 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 17 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 17:23:12Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 17:23:12SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1006
+Wiatr: 5,4 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 17:23:15SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1006
+Wiatr: 5,4 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 17:23:15 Nacisniecie przyciksu wykonaj. wyświetl na ekranie pogodę Z parametrami: miasto: Wrocław
+09.04.2018 17:23:15 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: smutna
+09.04.2018 17:23:15 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+09.04.2018 17:23:15Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 17:23:15 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 17:23:16 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/lJW4A1RQsG55Y32Q.jpg Pod nazwą: tmp.png
+09.04.2018 17:23:16 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 17:23:16SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: smutna imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/lJW4A1RQsG55Y32Q.jpgnameOfImage: tmp.png
+09.04.2018 17:23:17SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: smutna imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/lJW4A1RQsG55Y32Q.jpgnameOfImage: tmp.png
+09.04.2018 17:23:17 Nacisniecie przyciksu wykonaj. (wyswietl kwejk) Z parametrami: url: https://kwejk.pl/ keyword: smutna
+09.04.2018 17:23:17 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+09.04.2018 17:23:18 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 17:25:06 ====================== Uruchomienie programu ======================
+09.04.2018 17:26:24 ====================== Uruchomienie programu ======================

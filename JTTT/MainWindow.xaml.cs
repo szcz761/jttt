@@ -30,14 +30,16 @@ namespace JTTT
             try
             {
                 Task newTask;
-                if (TIPogoda.IsSelected)
+                if (TIPogoda.IsSelected && TIMail.IsSelected)
                     newTask = new TaskTempSender(TextBox_Miasto.Text, UpDownControl_Temp.Value, Textbox_Mail.Text, Textbox_Task_Name.Text);
-                else
+                else if (TIKwejk.IsSelected && TIMail.IsSelected)
                     newTask = new TaskKwejkSender(Textbox_Text.Text, Textbox_URL.Text, Textbox_Mail.Text, Textbox_Task_Name.Text);
-                //tasks.AddTask(newTask);
+                else if (TIKwejk.IsSelected && TIDisplay.IsSelected)
+                    newTask = new TaskKwejkDisplay(Textbox_Text.Text, Textbox_URL.Text, Textbox_Task_Name.Text);
+                else 
+                    newTask = new TaskTempDisplay(TextBox_Miasto.Text, UpDownControl_Temp.Value, Textbox_Task_Name.Text);            
                 DataBase.AddTask(newTask);
                 ListOfTasks.Items.Add(newTask);
-                //ListOfTasks.SourceUpdated();
             }
             catch (Exception x)
             {

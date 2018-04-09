@@ -14,20 +14,18 @@
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="8*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Button_Add_Task" Content="Dodaj zadanie do listy" HorizontalAlignment="Left" Margin="99,193,0,0" VerticalAlignment="Top" Width="222" Click="Button_Add_Task_Click" RenderTransformOrigin="0.524,-1.033" Height="19" Grid.ColumnSpan="2"/>
-        <Label x:Name="Label_Mail" Content="Mail:" HorizontalAlignment="Left" Margin="23,137,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="23" Width="35"/>
-        <TextBox x:Name="Textbox_Mail" HorizontalAlignment="Left" Height="23" Margin="99,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="szcz761@gmail.com" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="ConsoleTextbox" HorizontalAlignment="Left" Height="127" Margin="10,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="2"/>
+        <Button x:Name="Button_Add_Task" Content="Dodaj zadanie do listy" HorizontalAlignment="Left" Margin="109,243,0,0" VerticalAlignment="Top" Width="222" Click="Button_Add_Task_Click" RenderTransformOrigin="0.524,-1.033" Height="19" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="ConsoleTextbox" HorizontalAlignment="Left" Height="83" Margin="10,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="2"/>
         <ListView x:Name="ListOfTasks" HorizontalAlignment="Left" Height="252" Margin="64,15,0,0" VerticalAlignment="Top" Width="397" Grid.Column="1"
                  ItemsSource="{Binding lists}"
                  DisplayMemberPath="TaskProperties"
                  />
         <Button x:Name="Button_Do_Tasks" Content="Wykonaj!" Grid.Column="1" Margin="64,272,292,16.2" FontWeight="Bold" FontSize="14" Click="Button_Do_Tasks_Click"/>
         <Button x:Name="Button_Clean"  Content="Czysc" Grid.Column="1" Margin="204,272,160,16.2" FontWeight="Bold" FontSize="14" Click="Button_Clean_Click"/>
-        <TextBox x:Name="Textbox_Task_Name" HorizontalAlignment="Left" Height="23" Margin="100,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Text="Nowe Zadanie" Grid.ColumnSpan="2"/>
-        <Label x:Name="Label_Task_Name" Content="Nazwa zadania:" HorizontalAlignment="Left" Margin="0,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="28" Width="124"/>
-        <Button x:Name="Button_Pogoda" Content="Sprawdż Pogodę" Grid.Column="1" HorizontalAlignment="Left" Margin="336,272,0,0" VerticalAlignment="Top" Width="125" Height="81" FontSize="14" Click="Button_Pogoda_Click" AutomationProperties.IsColumnHeader="True" FontWeight="Bold"/>
-        <TabControl x:Name="TC" HorizontalAlignment="Left" Height="122" Margin="10,10,0,0" VerticalAlignment="Top" Width="311" Grid.ColumnSpan="2">
+        <TextBox x:Name="Textbox_Task_Name" HorizontalAlignment="Left" Height="23" Margin="110,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Text="Nowe Zadanie" Grid.ColumnSpan="2"/>
+        <Label x:Name="Label_Task_Name" Content="Nazwa zadania:" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="28" Width="124"/>
+        <Button x:Name="Button_Pogoda" Content="Sprawdż Pogodę" Grid.Column="1" HorizontalAlignment="Left" Margin="336,272,0,0" VerticalAlignment="Top" Width="115" Height="71" FontSize="14" Click="Button_Pogoda_Click" AutomationProperties.IsColumnHeader="True" FontWeight="Bold"/>
+        <TabControl x:Name="TCBodziec" HorizontalAlignment="Left" Height="122" Margin="10,10,0,0" VerticalAlignment="Top" Width="311" Grid.ColumnSpan="2">
             <TabItem x:Name="TIPogoda" Header="Pogoda" HorizontalAlignment="Left" Width="57">
                 <Grid Background="#FFE5E5E5">
                     <TextBox x:Name="TextBox_Miasto" HorizontalAlignment="Left" Height="23" Margin="64,14,0,0" TextWrapping="Wrap" Text="Wrocław" VerticalAlignment="Top" Width="120"/>
@@ -36,7 +34,7 @@
                     <xctk:IntegerUpDown x:Name="UpDownControl_Temp" HorizontalAlignment="Left" Margin="104,47,0,0" VerticalAlignment="Top" Width="42" Text="0" Value="17" />
                 </Grid>
             </TabItem>
-            <TabItem Header="Kwejki" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="-2,0" Width="49">
+            <TabItem x:Name="TIKwejk" Header="Kwejki" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="-2,0" Width="49">
                 <Grid Background="#FFE5E5E5">
 
                     <Label x:Name="Label_URL" Content="URL:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.429,1.343" Height="23" Width="34"/>
@@ -44,6 +42,19 @@
                     <Label x:Name="Label_Text" Content="Tekst:" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.866,4.259" Height="28" Width="43"/>
                     <TextBox x:Name="Textbox_Text" HorizontalAlignment="Left" Height="23" Margin="58,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="nie"/>
 
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <TabControl x:Name="TCAkcja" HorizontalAlignment="Left" Height="68" Margin="10,137,0,0" VerticalAlignment="Top" Width="319" Grid.ColumnSpan="2">
+            <TabItem x:Name="TIMail" Header="Wyślij">
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="Label_Mail" Content="Mail:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="4.507,-0.837" Height="23" Width="35" Margin="0,7,0,0"/>
+                    <TextBox x:Name="Textbox_Mail" HorizontalAlignment="Left" Height="23" Margin="40,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Text="szcz761@gmail.com"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TIDisplay" Header="Wyświetl">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Wyświetle obrazek" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.511,0.09"/>
                 </Grid>
             </TabItem>
         </TabControl>
