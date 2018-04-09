@@ -30,7 +30,7 @@ namespace JTTT
             try
             {
                 Task newTask;
-                if (TIPogoda.IsFocused)
+                if (TIPogoda.IsSelected)
                     newTask = new TaskTempSender(TextBox_Miasto.Text, UpDownControl_Temp.Value, Textbox_Mail.Text, Textbox_Task_Name.Text);
                 else
                     newTask = new TaskKwejkSender(Textbox_Text.Text, Textbox_URL.Text, Textbox_Mail.Text, Textbox_Task_Name.Text);

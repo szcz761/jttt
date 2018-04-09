@@ -87,7 +87,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DBManager.cs" />
-    <Compile Include="JTTTDB.cs" />
+    <Compile Include="JTTTDBContext.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="QuickType.cs" />
     <Compile Include="Serialization.cs" />

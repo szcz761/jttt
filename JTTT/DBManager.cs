@@ -15,6 +15,7 @@ namespace JTTT
         public DBManager()
         {
             _DB = new JTTTDBContext();
+            //_DB.Tasks.ToString();
             lists = new ObservableCollection<Task>(_DB.Tasks.ToList());
         }
 
@@ -34,10 +35,11 @@ namespace JTTT
         public void UpdateTextView(ListView Lista)
         {
             Lista.Items.Clear();
-            foreach(var it in lists)
-            {
-                Lista.Items.Add(it);
-            }
+            if(lists.Count!=0)
+                foreach(var it in lists)
+                {
+                   Lista.Items.Add(it);
+                }
         }
 
         public void RemoveTasks()

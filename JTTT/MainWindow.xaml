@@ -47,7 +47,5 @@
                 </Grid>
             </TabItem>
         </TabControl>
-
-
     </Grid>
 </Window>

@@ -951,3 +951,159 @@ Tasks: EntityType: EntitySet 'Tasks' is based on type 'Task' that has no keys de
 08.04.2018 12:56:09 ====================== Uruchomienie programu ======================
 08.04.2018 13:53:44 ====================== Uruchomienie programu ======================
 08.04.2018 15:24:17 ====================== Uruchomienie programu ======================
+09.04.2018 15:25:45 ====================== Uruchomienie programu ======================
+09.04.2018 15:27:36 ====================== Uruchomienie programu ======================
+09.04.2018 15:30:32 ====================== Uruchomienie programu ======================
+09.04.2018 15:31:02 ====================== Uruchomienie programu ======================
+09.04.2018 15:36:40 ====================== Uruchomienie programu ======================
+09.04.2018 15:37:39 ====================== Uruchomienie programu ======================
+09.04.2018 15:45:17 ====================== Uruchomienie programu ======================
+09.04.2018 15:47:58 ====================== Uruchomienie programu ======================
+09.04.2018 15:48:34 ====================== Uruchomienie programu ======================
+09.04.2018 15:49:01 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+09.04.2018 15:49:01 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+09.04.2018 15:49:01Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 15:49:02 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 15:49:02 09.04.2018 15:49:02SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+09.04.2018 15:49:02 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+09.04.2018 15:49:02 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+09.04.2018 15:49:02Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 15:49:02 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 15:49:02 09.04.2018 15:49:02SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+09.04.2018 15:49:02 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+09.04.2018 15:49:02 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+09.04.2018 15:49:02Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 15:49:02 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 15:49:02 09.04.2018 15:49:02SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+09.04.2018 15:51:35 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+09.04.2018 15:51:35 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+09.04.2018 15:51:35Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 15:51:35 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 15:51:35 09.04.2018 15:51:35SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+09.04.2018 15:51:35 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: nie
+09.04.2018 15:51:35 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+09.04.2018 15:51:35Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 15:51:35 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 15:51:36 09.04.2018 15:51:36SearchSentence(): Nie znaleziono pasujacych nodow - zwracam pousty String
+09.04.2018 15:52:06 ====================== Uruchomienie programu ======================
+09.04.2018 15:58:44 ====================== Uruchomienie programu ======================
+09.04.2018 15:59:08 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 17 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 15:59:08Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 15:59:08SendEmail(): Expection:  System.ArgumentException: Określony ciąg nie ma formatu wymaganego dla tematu.
+   w System.Net.Mail.Message.set_Subject(String value)
+   w System.Net.Mail.MailMessage.set_Subject(String value)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\jttt\JTTT\MailSender.cs:wiersz 33
+09.04.2018 15:59:08 Błąd: System.Exception: Nie udało się wysłać! Prawdopodobnie zły mail!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\jttt\JTTT\MailSender.cs:wiersz 67
+   w JTTT.TaskTempSender.Process() w H:\Programy\Visual Studio\JTTT\jttt\JTTT\TaskTempSender.cs:wiersz 57
+09.04.2018 15:59:51 ====================== Uruchomienie programu ======================
+09.04.2018 16:00:16 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 17 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:00:16Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:00:16SendEmail(): Expection:  System.ArgumentException: Określony ciąg nie ma formatu wymaganego dla tematu.
+   w System.Net.Mail.Message.set_Subject(String value)
+   w System.Net.Mail.MailMessage.set_Subject(String value)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\jttt\JTTT\MailSender.cs:wiersz 33
+09.04.2018 16:00:16 Błąd: System.Exception: Nie udało się wysłać! Prawdopodobnie zły mail!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\jttt\JTTT\MailSender.cs:wiersz 67
+   w JTTT.TaskTempSender.Process() w H:\Programy\Visual Studio\JTTT\jttt\JTTT\TaskTempSender.cs:wiersz 57
+09.04.2018 16:00:16 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 15 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:00:16Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:00:17SendEmail(): Expection:  System.ArgumentException: Określony ciąg nie ma formatu wymaganego dla tematu.
+   w System.Net.Mail.Message.set_Subject(String value)
+   w System.Net.Mail.MailMessage.set_Subject(String value)
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\jttt\JTTT\MailSender.cs:wiersz 33
+09.04.2018 16:00:17 Błąd: System.Exception: Nie udało się wysłać! Prawdopodobnie zły mail!
+   w MailSender.SendEmail(String keyword, String imageURL, String nameOfImage) w H:\Programy\Visual Studio\JTTT\jttt\JTTT\MailSender.cs:wiersz 67
+   w JTTT.TaskTempSender.Process() w H:\Programy\Visual Studio\JTTT\jttt\JTTT\TaskTempSender.cs:wiersz 57
+09.04.2018 16:00:17 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 24 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:00:17Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:00:17 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: rosja
+09.04.2018 16:00:17 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+09.04.2018 16:00:17Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:00:17 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 16:00:18 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/n5lNNfDwjvFg7SR3.jpg Pod nazwą: tmp.png
+09.04.2018 16:00:18 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 16:00:18SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: rosja imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/n5lNNfDwjvFg7SR3.jpgnameOfImage: tmp.png
+09.04.2018 16:00:20SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: rosja imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/n5lNNfDwjvFg7SR3.jpgnameOfImage: tmp.png
+09.04.2018 16:02:27 ====================== Uruchomienie programu ======================
+09.04.2018 16:02:35 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 17 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:02:37Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:04:06 ====================== Uruchomienie programu ======================
+09.04.2018 16:04:11 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 17 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:04:15Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:06:02 ====================== Uruchomienie programu ======================
+09.04.2018 16:06:07 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 17 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:06:11Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:06:11SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1007
+Wiatr: 7,56 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 16:06:15SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1007
+Wiatr: 7,56 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 16:06:15 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 15 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:06:15Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:06:15SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1007
+Wiatr: 7,56 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 16:06:17SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1007
+Wiatr: 7,56 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 16:06:17 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 24 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:06:17Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:06:17 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: rosja
+09.04.2018 16:06:17 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+09.04.2018 16:06:17Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:06:17 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 16:06:18 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/n5lNNfDwjvFg7SR3.jpg Pod nazwą: tmp.png
+09.04.2018 16:06:18 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 16:06:18SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: rosja imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/n5lNNfDwjvFg7SR3.jpgnameOfImage: tmp.png
+09.04.2018 16:06:20SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: rosja imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/n5lNNfDwjvFg7SR3.jpgnameOfImage: tmp.png
+09.04.2018 16:08:28 ====================== Uruchomienie programu ======================
+09.04.2018 16:08:33 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 17 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:08:33Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:10:09 ====================== Uruchomienie programu ======================
+09.04.2018 16:10:13 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 17 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:10:13Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:10:17SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1007
+Wiatr: 7,56 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 16:10:19SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1007
+Wiatr: 7,56 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 16:10:19 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 15 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:10:19Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:10:19SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1007
+Wiatr: 7,56 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 16:10:21SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1007
+Wiatr: 7,56 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 16:10:21 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 24 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:10:21Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:10:21 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: szcz761@gmail.com keyword: rosja
+09.04.2018 16:10:21 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+09.04.2018 16:10:21Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:10:21 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 16:10:22 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/n5lNNfDwjvFg7SR3.jpg Pod nazwą: tmp.png
+09.04.2018 16:10:22 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+09.04.2018 16:10:22SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: rosja imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/n5lNNfDwjvFg7SR3.jpgnameOfImage: tmp.png
+09.04.2018 16:10:23SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: rosja imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/n5lNNfDwjvFg7SR3.jpgnameOfImage: tmp.png
+09.04.2018 16:16:57 ====================== Uruchomienie programu ======================
+09.04.2018 16:17:09 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 17 mail: szcz761@gmail.com miasto: Wrocław
+09.04.2018 16:17:09Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: szcz761@gmail.comOraz Defultowym hasłem
+09.04.2018 16:17:10SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1007
+Wiatr: 7,56 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+09.04.2018 16:17:12SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: Dzisiaj w Wrocław jest 23 stopni. 
+Ciśnienie: 1007
+Wiatr: 7,56 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png

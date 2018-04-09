@@ -30,9 +30,9 @@ public class MailSender
             message.From = new MailAddress(MyMail);
             message.To.Add(new MailAddress(TargetEmail));
 
-            message.Subject = "JTTT wyszukało słowo: " + keyword;
+            message.Subject = "JTTT Wykonał zadanie! ";
 
-            message.Body = "Witam, zgodnie z polecieniem wyszukałem obrazki na temat: " + keyword + "\n Oto link do obrazka: " + imageURL + "\n Znajduje się on również w załączniku.";
+            message.Body = "Witam, zgodnie z polecieniem wkonuje powiezone mi zadanie: \n" + keyword + "\n Oto link do obrazka: " + imageURL + "\n Znajduje się on również w załączniku.";
 
             var mail = new SmtpClient(MailHost);
             mail.Port = 587;

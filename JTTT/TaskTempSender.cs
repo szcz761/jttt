@@ -20,6 +20,9 @@ namespace JTTT
             Temp = (int)temp;
             TaskProperties = TaskName + ": Pogoda powyzej? \"" + Temp + "\" w " + City + " dla " + MailAdress;
         }
+        public TaskTempSender()
+        {
+        }
 
 
         public override string Process()
@@ -41,16 +44,9 @@ namespace JTTT
                     $"Ciśnienie: {welcome.Main.Pressure.ToString()}\n" +
                     $"Wiatr: {welcome.Wind.Speed * 3.6} km/h \n";
          
-                var uri = new Uri("http://openweathermap.org/img/w/" + welcome.Weather[0].Icon + ".png");
-                var bitmap = new BitmapImage(uri);
-              
-                
-                BitmapEncoder encoder = new PngBitmapEncoder();
-                encoder.Frames.Add(BitmapFrame.Create(uri));
-                using (var fileStream = new System.IO.FileStream("tmp.png", System.IO.FileMode.Create))
-                {
-                    encoder.Save(fileStream);
-                }
+                var uri = "http://openweathermap.org/img/w/" + welcome.Weather[0].Icon + ".png";
+                using (var wc = new WebClient())
+                    wc.DownloadFile(uri, "tmp.png");
                 mailsender.SendEmail(Message, uri.ToString(), "tmp.png");
 
                 return "Barwo! Wysłałeś Obrazek o URL: " + uri.ToString() + "\n";
