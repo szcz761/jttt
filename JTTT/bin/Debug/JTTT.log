@@ -1152,3 +1152,107 @@ Wiatr: 5,4 km/h
 09.04.2018 17:23:18 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
 09.04.2018 17:25:06 ====================== Uruchomienie programu ======================
 09.04.2018 17:26:24 ====================== Uruchomienie programu ======================
+10.04.2018 12:33:00 ====================== Uruchomienie programu ======================
+10.04.2018 12:34:35 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+10.04.2018 12:34:35 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+10.04.2018 12:34:35Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+10.04.2018 12:34:35 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+10.04.2018 12:34:36 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/rMSeLFQTSVgaUw2c.jpg Pod nazwą: tmp.png
+10.04.2018 12:34:36 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+10.04.2018 12:34:36SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/rMSeLFQTSVgaUw2c.jpgnameOfImage: tmp.png
+10.04.2018 12:34:41SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/rMSeLFQTSVgaUw2c.jpgnameOfImage: tmp.png
+10.04.2018 12:34:41 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 18 mail: fiwo137@gmail.com miasto: Wrocław
+10.04.2018 12:34:41Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+10.04.2018 12:34:42SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: Dzisiaj w Wrocław jest 20 stopni. 
+Ciśnienie: 1008
+Wiatr: 20,52 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+10.04.2018 12:34:44SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: Dzisiaj w Wrocław jest 20 stopni. 
+Ciśnienie: 1008
+Wiatr: 20,52 km/h 
+ imageURL: http://openweathermap.org/img/w/01d.pngnameOfImage: tmp.png
+10.04.2018 12:34:44 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 23 mail: fiwo137@gmail.com miasto: Bogatynia
+10.04.2018 12:34:44Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+10.04.2018 13:11:43 ====================== Uruchomienie programu ======================
+10.04.2018 13:12:00 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+10.04.2018 13:12:00 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 18 mail: fiwo137@gmail.com miasto: Wrocław
+10.04.2018 13:12:00 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+10.04.2018 13:12:00Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+10.04.2018 13:12:00Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+10.04.2018 13:12:01 Błąd: System.IO.IOException: Proces nie może uzyskać dostępu do pliku „C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\bin\Debug\JTTT.log”, ponieważ jest on używany przez inny proces.
+   w System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   w System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   w System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   w System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   w System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   w System.IO.StreamWriter..ctor(String path, Boolean append)
+   w System.IO.File.AppendText(String path)
+   w JTTT.Log.WriteToLog(String message) w C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\Log.cs:wiersz 14
+   w JTTT.TaskTempSender.Process() w C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\TaskTempSender.cs:wiersz 32
+10.04.2018 13:12:01 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+10.04.2018 13:12:01 Błąd: System.Net.WebException: Wystąpił wyjątek podczas żądania klienta WebClient. ---> System.IO.IOException: Proces nie może uzyskać dostępu do pliku „C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\bin\Debug\tmp.png”, ponieważ jest on używany przez inny proces.
+   w System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   w System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   w System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   w System.Net.WebClient.DownloadFile(Uri address, String fileName)
+   --- Koniec śladu stosu wyjątków wewnętrznych ---
+   w System.Net.WebClient.DownloadFile(Uri address, String fileName)
+   w System.Net.WebClient.DownloadFile(String address, String fileName)
+   w JTTT.TaskTempSender.Process() w C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\TaskTempSender.cs:wiersz 51
+10.04.2018 13:12:01 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/IE9XXn05vLWZNpVq.jpg Pod nazwą: tmp.png
+10.04.2018 13:12:02 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+10.04.2018 13:12:02SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/IE9XXn05vLWZNpVq.jpgnameOfImage: tmp.png
+10.04.2018 13:12:04SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/IE9XXn05vLWZNpVq.jpgnameOfImage: tmp.png
+10.04.2018 13:12:04 Barwo! Wysłałeś Obrazek o URL: https://i1.kwejk.pl/k/obrazki/2018/04/IE9XXn05vLWZNpVq.jpg
+
+10.04.2018 13:13:03 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+10.04.2018 13:13:03 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 18 mail: fiwo137@gmail.com miasto: Wrocław
+10.04.2018 13:13:03 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 23 mail: fiwo137@gmail.com miasto: Bogatynia
+10.04.2018 13:13:03Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+10.04.2018 13:13:03Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+10.04.2018 13:13:03 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+10.04.2018 13:13:03 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+10.04.2018 13:13:03Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+10.04.2018 13:13:03 Temperatura jest niższa niz podano nie robie nic
+10.04.2018 13:14:45 ====================== Uruchomienie programu ======================
+10.04.2018 13:14:54 Nacisniecie przyciksu wykonaj. Z parametrami: url: https://kwejk.pl/ mail: fiwo137@gmail.com keyword: nie
+10.04.2018 13:14:54 Stworzenie PAgeHtml z  url: https://kwejk.pl/
+10.04.2018 13:14:54 Nacisniecie przyciksu wykonaj. Z parametrami: temp: 18 mail: fiwo137@gmail.com miasto: Wrocław
+10.04.2018 13:14:54Stworzono klase MailSender z: Mymail: automail226303@gmail.com MailHost: smtp.gmail.comTargetEmail: fiwo137@gmail.comOraz Defultowym hasłem
+10.04.2018 13:14:54 Błąd: System.IO.IOException: Proces nie może uzyskać dostępu do pliku „C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\bin\Debug\JTTT.log”, ponieważ jest on używany przez inny proces.
+   w System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   w System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   w System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   w System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   w System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   w System.IO.StreamWriter..ctor(String path, Boolean append)
+   w System.IO.File.AppendText(String path)
+   w MailSender..ctor(String email) w C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\MailSender.cs:wiersz 19
+   w JTTT.TaskTempSender.Process() w C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\TaskTempSender.cs:wiersz 34
+10.04.2018 13:14:54 Błąd: System.IO.IOException: Proces nie może uzyskać dostępu do pliku „C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\bin\Debug\JTTT.log”, ponieważ jest on używany przez inny proces.
+   w System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   w System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   w System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   w System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   w System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   w System.IO.StreamWriter..ctor(String path, Boolean append)
+   w System.IO.File.AppendText(String path)
+   w JTTT.Log.WriteToLog(String message) w C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\Log.cs:wiersz 14
+   w JTTT.TaskTempSender.Process() w C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\TaskTempSender.cs:wiersz 32
+10.04.2018 13:14:54 Błąd: System.IO.IOException: Proces nie może uzyskać dostępu do pliku „C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\bin\Debug\JTTT.log”, ponieważ jest on używany przez inny proces.
+   w System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   w System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   w System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   w System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   w System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   w System.IO.StreamWriter..ctor(String path, Boolean append)
+   w System.IO.File.AppendText(String path)
+   w JTTT.Log.WriteToLog(String message) w C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\Log.cs:wiersz 14
+   w JTTT.TaskKwejkSender.Process() w C:\Users\fiwo1\Desktop\Politechnika Wrocławska\jttt\JTTT\TaskKwejkSender.cs:wiersz 29
+10.04.2018 13:14:54 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+10.04.2018 13:14:55 SaveImage(): zapisalem obraz o URL: https://i1.kwejk.pl/k/obrazki/2018/04/IE9XXn05vLWZNpVq.jpg Pod nazwą: tmp.png
+10.04.2018 13:14:55 SearchSentence(): Stworzenie HtmlDocument z strony sciagnietej prez WebClient.DownloadString 
+10.04.2018 13:14:55SendEmail(): Stworzono wiadomośc z tekstem (bez złącznika). Parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/IE9XXn05vLWZNpVq.jpgnameOfImage: tmp.png
+10.04.2018 13:14:57SendEmail(): wysłano wiadomosć wraz z załącznikiem parametry: keyword: nie imageURL: https://i1.kwejk.pl/k/obrazki/2018/04/IE9XXn05vLWZNpVq.jpgnameOfImage: tmp.png
+10.04.2018 13:14:57 Barwo! Wysłałeś Obrazek o URL: https://i1.kwejk.pl/k/obrazki/2018/04/IE9XXn05vLWZNpVq.jpg
+

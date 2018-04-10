@@ -40,10 +40,7 @@ namespace JTTT
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        virtual public string Process()
-        {
-            return "false";
-        }
+        virtual public void Process() {   }
 
         private void NotifyPropertyChanged(string value)
         {

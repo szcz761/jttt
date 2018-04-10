@@ -25,7 +25,7 @@ namespace JTTT
         }
 
 
-        public override string Process()
+        public override void Process()
         {
             try
             {
@@ -37,9 +37,11 @@ namespace JTTT
                 using (var wc = new WebClient())
                     jsonString = wc.DownloadString("http://api.openweathermap.org/data/2.5/weather?q=" + City + ",pl&appid=e3bb48f5e5555457cb51cee4bee3ceca");
                 var welcome = Welcome.FromJson(jsonString);
-                if(welcome.Main.Temp - 273 < Temp)
-                    return"Temperatura jest niższa niz podano nie robie nic";
-
+                if (welcome.Main.Temp - 273 < Temp)
+                {
+                    Log.WriteToLog("Temperatura jest niższa niz podano nie robie nic");
+                    return;
+                }
                 string Message = $"Dzisiaj w {City} jest { (welcome.Main.Temp - 273.15).ToString()} stopni. \n" +
                     $"Ciśnienie: {welcome.Main.Pressure.ToString()}\n" +
                     $"Wiatr: {welcome.Wind.Speed * 3.6} km/h \n";
@@ -49,12 +51,11 @@ namespace JTTT
                     wc.DownloadFile(uri, "tmp.png");
                 mailsender.SendEmail(Message, uri.ToString(), "tmp.png");
 
-                return "Barwo! Wysłałeś Obrazek o URL: " + uri.ToString() + "\n";
+                Log.WriteToLog("Barwo! Wysłałeś Obrazek o URL: " + uri.ToString() + "\n");
             }
             catch (Exception x)
             {
                 Log.WriteToLog("Błąd: " + x);
-                return "Błąd: " + x.Message.ToString() + "\n";
             }
         }
 

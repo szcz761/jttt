@@ -22,7 +22,7 @@ namespace JTTT
 
         }
 
-        public override string Process()
+        public override void Process()
         {
             try
             {
@@ -31,15 +31,17 @@ namespace JTTT
                 var mailsender = new MailSender(MailAdress);
                 var URL_image = HTML.SearchSentence(SearchPhrase);
                 if (URL_image == "")
-                    return "Nie znaleziono obrazka! Prawdopodobnie zła nazwa obrazka! \n";
+                {
+                    Log.WriteToLog("Nie znaleziono obrazka! Prawdopodobnie zła nazwa obrazka! \n");
+                    return;
+                }
                 HTML.SaveImage(URL_image, "tmp.png");
                 mailsender.SendEmail(SearchPhrase, HTML.SearchSentence(SearchPhrase), "tmp.png");
-                return "Barwo! Wysłałeś Obrazek o URL: " + URL_image + "\n";
+                Log.WriteToLog("Barwo! Wysłałeś Obrazek o URL: " + URL_image + "\n");
             }
             catch (Exception x)
             {
                 Log.WriteToLog("Błąd: " + x);
-                return "Błąd: " + x.Message.ToString() + "\n";
             }
         }
     }

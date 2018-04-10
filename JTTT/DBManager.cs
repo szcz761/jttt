@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Threading;
 
 namespace JTTT
 {
@@ -57,9 +58,11 @@ namespace JTTT
 
         public void DoTasks()
         {
+            List<Thread> threads = new List<Thread>();
             foreach (Task t in GetTasks())
             {
-                t.Process();
+                threads.Add(new Thread(t.Process));
+                threads.Last().Start();
             }
         }
 
