@@ -25,7 +25,7 @@ namespace JTTT
         }
 
 
-        public override void Process()
+        public override void Process(object randomNumb)
         {
             try
             {
@@ -42,14 +42,16 @@ namespace JTTT
                     Log.WriteToLog("Temperatura jest niższa niz podano nie robie nic");
                     return;
                 }
+                Random random = new Random();
+                var pictureName = "tmpTempSender" + randomNumb.ToString() + ".png";
                 string Message = $"Dzisiaj w {City} jest { (welcome.Main.Temp - 273.15).ToString()} stopni. \n" +
                     $"Ciśnienie: {welcome.Main.Pressure.ToString()}\n" +
                     $"Wiatr: {welcome.Wind.Speed * 3.6} km/h \n";
          
                 var uri = "http://openweathermap.org/img/w/" + welcome.Weather[0].Icon + ".png";
                 using (var wc = new WebClient())
-                    wc.DownloadFile(uri, "tmp.png");
-                mailsender.SendEmail(Message, uri.ToString(), "tmp.png");
+                    wc.DownloadFile(uri, pictureName);
+                mailsender.SendEmail(Message, uri.ToString(), pictureName);
 
                 Log.WriteToLog("Barwo! Wysłałeś Obrazek o URL: " + uri.ToString() + "\n");
             }

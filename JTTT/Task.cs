@@ -40,7 +40,7 @@ namespace JTTT
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        virtual public void Process() {   }
+        virtual public void Process(object randomNumb) {   }
 
         private void NotifyPropertyChanged(string value)
         {

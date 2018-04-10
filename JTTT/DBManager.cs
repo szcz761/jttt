@@ -58,11 +58,12 @@ namespace JTTT
 
         public void DoTasks()
         {
+            Random random = new Random();
             List<Thread> threads = new List<Thread>();
             foreach (Task t in GetTasks())
             {
-                threads.Add(new Thread(t.Process));
-                threads.Last().Start();
+                threads.Add(new Thread(new ParameterizedThreadStart(t.Process)));
+                threads.Last().Start(random.Next(0,1000));
             }
         }
 

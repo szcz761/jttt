@@ -22,7 +22,7 @@ namespace JTTT
 
         }
 
-        public override void Process()
+        public override void Process(object randomNumb)
         {
             try
             {
@@ -35,8 +35,9 @@ namespace JTTT
                     Log.WriteToLog("Nie znaleziono obrazka! Prawdopodobnie zła nazwa obrazka! \n");
                     return;
                 }
-                HTML.SaveImage(URL_image, "tmp.png");
-                mailsender.SendEmail(SearchPhrase, HTML.SearchSentence(SearchPhrase), "tmp.png");
+                var pictureName = "tmpKwejkSender" + randomNumb.ToString() + ".png";
+                HTML.SaveImage(URL_image, pictureName);
+                mailsender.SendEmail(SearchPhrase, HTML.SearchSentence(SearchPhrase), pictureName);
                 Log.WriteToLog("Barwo! Wysłałeś Obrazek o URL: " + URL_image + "\n");
             }
             catch (Exception x)

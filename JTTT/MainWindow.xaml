@@ -6,7 +6,8 @@
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:local="clr-namespace:JTTT"
         mc:Ignorable="d"
-        Title="MainWindow" 
+        Title="JTTT"
+        Closing="Window_Closing"
         MinHeight="400" Height="400" MaxHeight="400" 
         MinWidth="810" Width="810" MaxWidth="810">
     <Grid Margin="0,0,3.6,-0.2">

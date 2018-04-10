@@ -16,7 +16,7 @@ namespace JTTT
             TaskProperties = TaskName + ": Jeżeli znajde to wyświetlam Obrazek  \"" + SearchPhrase + "\" z " + SourceUrl;
         }
         public TaskKwejkDisplay() { }
-        public override void Process()
+        public override void Process(object randomNumb)
         {
             try
             {

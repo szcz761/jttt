@@ -4,6 +4,7 @@ using System.Windows.Controls;
 using System.IO;
 using System.Collections.ObjectModel;
 using Jeson_Test_JTTT4._1_;
+using System.Threading;
 
 namespace JTTT
 {
@@ -14,11 +15,14 @@ namespace JTTT
     {
         //Tasks tasks;
         DBManager DataBase;
+        Thread thread;
       
         public MainWindow()
         {
             InitializeComponent();
             Log.WriteToLog("====================== Uruchomienie programu ======================");
+            thread = new Thread(Log.throwToLog);
+            thread.Start();
             //tasks = new Tasks();
             DataBase = new DBManager();
             //ListOfTasks.DataContext = DataBase.GetTasks();//<<==========================================================TU zmiana ale nie wiem na co 
@@ -62,6 +66,11 @@ namespace JTTT
         {
             Window1 win2 = new Window1();
             win2.Show();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            thread.Abort();
         }
 
         /* private void Button_Deserialize_Click(object sender, RoutedEventArgs e)
