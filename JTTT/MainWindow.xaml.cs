@@ -59,6 +59,7 @@ namespace JTTT
 
         private void Button_Do_Tasks_Click(object sender, RoutedEventArgs e)
         {
+            ConsoleTextbox.Text = "";
             DataBase.DoTasks();
         }
 
