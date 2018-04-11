@@ -40,6 +40,11 @@ namespace JTTT
                 if (welcome.Main.Temp - 273 < Temp)
                 {
                     Log.WriteToLog("Temperatura jest niższa niz podano nie robie nic");
+                    App.Current.Dispatcher.Invoke(new Action(() =>
+                    {
+                        MainWindow w = (MainWindow)App.Current.MainWindow;
+                        w.WriteConsoleTextBox("Temperatura jest niższa niz podano nie robie nic");
+                    }));
                     return;
                 }
                 Random random = new Random();

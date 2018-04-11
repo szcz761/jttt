@@ -33,6 +33,11 @@ namespace JTTT
                 if (URL_image == "")
                 {
                     Log.WriteToLog("Nie znaleziono obrazka! Prawdopodobnie zła nazwa obrazka! \n");
+                    App.Current.Dispatcher.Invoke(new Action(() =>
+                    {
+                        MainWindow w = (MainWindow)App.Current.MainWindow;
+                        w.WriteConsoleTextBox("Nie znaleziono obrazka! Prawdopodobnie zła nazwa obrazka!");
+                    }));
                     return;
                 }
                 var pictureName = "tmpKwejkSender" + randomNumb.ToString() + ".png";

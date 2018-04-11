@@ -63,6 +63,7 @@ namespace JTTT
             foreach (Task t in GetTasks())
             {
                 threads.Add(new Thread(new ParameterizedThreadStart(t.Process)));
+                threads.Last().SetApartmentState(ApartmentState.STA);
                 threads.Last().Start(random.Next(0,1000));
             }
         }

@@ -36,6 +36,11 @@ namespace JTTT
                 if (welcome.Main.Temp - 273 < Temp)
                 {
                     Log.WriteToLog("Temperatura jest niższa niz podano nie robie nic");
+                    App.Current.Dispatcher.Invoke(new Action(() =>
+                    {
+                        MainWindow w = (MainWindow)App.Current.MainWindow;
+                        w.WriteConsoleTextBox("Temperatura jest niższa niz podano nie robie nic");
+                    }));
                     return;
                 }
                 var pictureName = "tmpTempDisplay" + randomNumb.ToString() + ".png";
@@ -48,6 +53,7 @@ namespace JTTT
                     wc.DownloadFile(uri, pictureName);
                 var win = new WindowDisplay(Message, uri);
                 win.Show();
+                System.Windows.Threading.Dispatcher.Run();
                 Log.WriteToLog("Barwo! Wyświetliłeś Obrazek o URL: " + uri.ToString() + "\n");
             }
             catch (Exception x)

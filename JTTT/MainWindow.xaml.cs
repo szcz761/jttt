@@ -73,6 +73,10 @@ namespace JTTT
             thread.Abort();
         }
 
+        public void WriteConsoleTextBox(string message)
+        {
+            ConsoleTextbox.Text += "\n" + message;
+        }
         /* private void Button_Deserialize_Click(object sender, RoutedEventArgs e)
          {
              ObservableCollection<Task> tmp = Serialization.DeserializationFunc("task.xml");
